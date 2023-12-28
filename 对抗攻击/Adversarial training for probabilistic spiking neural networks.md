@@ -17,3 +17,11 @@ A promising alternative paradigm is offered by Spiking Neural Networks (SNNs), i
 In this paper, for the first time, the sensitivity of SNNs trained via ML is studied under white-box adversarial attacks, and a robust training mechanism is proposed that is demonstrated to enhance the performance of SNNs under adversarial examples. Specifically, we focus on a two-layer SNN (see Fig. 1), and consider rate and time encoding, as well as rate and first-to-spike decoding [13]. Our results illuminate the sensitivity of SNNs to adversarial example under different encoding and decoding schemes, and the effectiveness of robust training methods.
 
 本文首次研究了基于ML训练的snn在白盒对抗攻击下的敏感性，提出了一种鲁棒训练机制，并证明了该机制可以增强snn在对抗示例下的性能。具体来说，我们关注的是一个双层SNN(见图1)，并考虑了速率和时间编码，以及速率和首峰解码[13]。我们的研究结果说明了snn在不同编码和解码方案下对对抗样本的敏感性，以及鲁棒训练方法的有效性。
+
+
+
+### II. SNN-BASED CLASSIFICATION
+
+### III. DESIGNING ADVERSARIAL EXAMPLES
+
+In this work, we consider white-box attacks based on full knowledge of the model,
