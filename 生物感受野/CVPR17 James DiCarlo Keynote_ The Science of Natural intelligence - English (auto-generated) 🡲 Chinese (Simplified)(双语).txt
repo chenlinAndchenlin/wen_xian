@@ -1,0 +1,2807 @@
+thank you thank you young G for that kind introduction like to thank the
+谢谢你，谢谢年轻的 G 的热情介绍，感谢
+
+organizers for inviting me to come and speak to all of you this is really I
+组织者邀请我来和你们所有人交谈，我认为这确实是
+
+think a great opportunity to convey some of what we do in our lab in our field to
+一个很好的机会，可以向你们传达我们在实验室中所做的一些工作。
+
+what you're doing here I must say I'm a bit of an outsider as
+我在这里做的事情我必须说我有点局外人，正如
+
+you heard from yang G I'm not classically trained as a computer vision
+你从 yang G 那里听到的那样，我没有接受过计算机视觉科学家的经典训练，
+
+scientist I'm a neuroscientist and most of the views that I'll tell you though
+我是一名神经科学家，但我会告诉你的大部分观点都是
+
+about neuroscience aren't necessarily reflective of all of neuroscience but I
+关于 神经科学不一定反映所有的神经科学，但我
+
+hope to be an ambassador between our two fields and I hope you'll see that in my
+希望成为我们两个领域之间的大使，我希望你们能在我的演讲中看到，
+
+talk now most of what's motivated me and maybe many of you in my career is been
+激励我以及你们中的许多人在我的职业生涯中的大部分动力都是
+
+to try to understand this computing device just three pounds and only 20
+尝试 要理解这个计算设备，只需三磅，仅 20
+
+watts yet it underlies all of who we are and how we see and understand the world
+瓦，但它是我们是谁以及我们如何看待和理解世界的基础，
+
+I think many of you are motivated by questions of how do we build silicon
+我想你们中的许多人都被我们如何构建硅
+
+base let's call it computer vision or computational vision and may be
+基础的问题所激励，我们称之为计算机视觉或计算视觉的动机可能是
+
+motivated by how it might build it to exceed or at least match a biological
+它如何构建它以超越或至少匹配
+
+human vision and just as a bit of preamble I'd like to kind of talk about
+人类生物视觉，就像序言一样，我想谈谈
+
+ways that you might think about brain and cognitive sciences as you go about
+你可能会如何思考大脑和认知科学，因为你 继续
+
+your work so some possible strategies if this is your goal you might say let's
+你的工作，所以一些可能的策略，如果这是你的目标，你可能会说，让我们
+
+ignore brain and cognitive sciences completely I don't think that's true of
+完全忽略大脑和认知科学，我不认为
+
+most of you because you're at least attending my talk so you're paying a
+你们大多数人都是这样，因为你至少参加了我的演讲，所以你付了
+
+little bit of attention you could say let's ignore brain and cognitive
+一点钱 你可以说，让我们忽略工程层面的大脑和认知
+
+sciences at the engineering level just build whatever you want and talk about
+科学，只是构建你想要的任何东西，并谈论
+
+your systems as being quote brain inspired you know that's a really good
+你的系统，因为它是引用大脑启发的，你知道这
+
+for PR and advertising I've seen people do that it's not my favorite way to see
+对公关和广告来说真的很有好处，我见过人们这样做，但事实并非如此 我最喜欢的看到
+
+our field portrayed a little better is to use human performance as a benchmark
+我们的领域被描绘得更好的方法是使用人类表现作为基准来
+
+to report your progress to the world this is also good for PR and is a little
+向世界报告你的进展，这对公关也有好处，而且
+
+better because you are at least measuring against a biological marker
+更好一点，因为你至少可以根据生物标记来衡量
+
+that is the human performance level you could study simple reduced biological
+人类的表现水平，你可以研究简单的简化生物
+
+vision systems and hope that you could discover some
+视觉系统，并希望你能发现一些可以
+
+principles that are somehow scalable to the human system this is the kind of
+在某种程度上扩展到人类系统的原理，这是
+
+implicit approach of most neuroscientists and it's not a bad
+大多数神经科学家的隐式方法，这也不是一个坏
+
+approach either I want to kind of today talk about maybe the last approach or
+方法，我今天想要谈论也许是
+
+the fifth approach on my list which is really to forward engineer within wisely
+我列表中的最后一种方法或第五种方法，这实际上是在明智
+
+chosen brain and cognitive sciences constraints but confirm your
+选择的大脑和认知科学限制内进行正向工程，但在进行时确认您
+
+correspondence with those constraints as you go so an interplay between model
+与这些限制的对应关系，因此模型
+
+building and data measurements and we call this in our field reverse
+构建和数据测量之间的相互作用，我们称之为 在我们的逆向
+
+engineering this is what we do around vision that I'll tell you about next but
+工程领域，这就是我们围绕愿景所做的事情，我接下来会告诉你，但
+
+I think you can apply this philosophy to lots of problems and intelligence and
+我认为你可以将这种理念应用到很多问题和智能上，
+
+this is what's happening across MIT and other universities and I think that's a
+这就是麻省理工学院和其他大学正在发生的事情，我认为这是一个
+
+good model for how to go forward and I hope I can confer trace some of that an
+很好的做法 如何前进的模型，我希望我可以在计算机视觉领域中提供一些线索，
+
+area of computer vision a bonus of this approach if you're able to succeed or
+如果您能够成功或
+
+make progress is not only my you succeed on your original problem of
+取得进展，那么这种方法的好处不仅仅是我的，您成功地解决了您最初的问题，即
+
+understanding how to build a computer vision system but that models that you
+理解如何 构建一个计算机视觉系统，但您
+
+create might enable advances in human health and things like brain machine
+创建的模型可能会促进人类健康的进步，例如脑机
+
+interfaces being able to inject signals to restore sight or to augment vision
+接口能够注入信号以恢复视力或增强视力，
+
+those are things that where you need to be connected to the biology to do those
+这些都是您需要与生物学连接才能完成的事情 这些
+
+are goals of neuroscience and they could become supported by your work if you
+是神经科学的目标，如果你
+
+follow this this kind of approach what I'm calling reverse engineering so let
+遵循这种我称之为逆向工程的方法，它们可能会得到你的工作的支持，所以让
+
+me start by introducing our problem which is that humans have what we call
+我首先介绍我们的问题，即人类具有我们所说的
+
+strong scene perception and I really mean that in just a catch-all way to say
+强大的场景感知，我真的意思是，用一种包罗万象的方式来说，
+
+that when you look at a scene like this one you can identify the objects a cars
+当您查看这样的场景时，您可以识别汽车
+
+and buildings and signs and so forth but also other latent content like the pose
+、建筑物和标志等物体，还可以识别其他潜在内容，例如
+
+and position of the cars and the people of safe navigable paths where you might
+汽车的姿势和位置以及 人们在安全的通航路径上，你可能会
+
+walk in this scene all the things you might want to do to say support things
+在这个场景中行走，所有你可能想做的事情，以支持
+
+like self-driving cars humans seem to do this kind of stuff effortlessly we don't
+自动驾驶汽车之类的事情，人类似乎毫不费力地做这种事情，我们
+
+work on that entire problem yet we're working on what we consider a building
+还没有解决整个问题，但我们' 我们正在研究我们所认为的构建
+
+block of that that we that all call object perception and our goal is to
+块，我们都称之为对象感知，我们的目标是对
+
+reverse-engineer object perception and we operationalize that much as you do by
+对象感知进行逆向工程，我们像你一样操作它，
+
+saying can we identify categorize and identify things in the scene like cars
+说我们可以识别、分类和识别场景中的物体，比如汽车
+
+people buildings and also other latent content such as the
+人物建筑以及其他潜在内容，例如
+
+position size pose etc and I'm going to lump that all together into what I call
+位置、大小、姿势等，我将把它们全部集中到我所说的
+
+our operational definition of object perception and our goal is to understand
+对象感知的操作定义中，我们的目标是了解
+
+how the brain accomplishes this constraints from our field tell us that
+大脑如何从我们的领域实现这些约束 我们知道，
+
+you when you look at that scene your visual system doesn't digest it all at
+当您观看该场景时，您的视觉系统不会立即消化所有内容，
+
+once you may be having high acuity in the
+您的凝视中心可能具有很高的敏锐度，
+
+center of gaze the ventral visual stream in your brain that I'll talk about in a
+我稍后将讨论您大脑中的腹侧视觉流，它
+
+minute really focuses on the central 10 degrees which I've Illustrated here for
+真正关注的是我在这里为你说明的中心 10 度，
+
+you and the way that you absorb the whole scene is by making rapid eye
+以及你吸收整个场景的方式是通过快速眼球
+
+movements to explore the scene so you may fixate for a few hundred
+运动来探索场景，这样你就可以
+
+milliseconds at that location and you make psychotic movements at about this
+在那个位置注视几百毫秒，然后你会在大约 在这个
+
+rate where you're sampling the scene for a few hundred milliseconds at each of
+速率下，你在每次注视时都会对场景进行几百毫秒的采样
+
+these fixations and that's when you do your seeing of the world not while your
+，这就是当你看到世界时，而不是在你的
+
+eyes are moving and then what this does is it brings to your to your brains your
+眼睛移动的时候，然后它所做的就是将你的眼睛带到你的大脑中
+
+eye and the rest of your brain is something that looks like a series of
+你大脑的其余部分看起来像是
+
+snapshots that I'm showing you here I hope that you notice you could maybe
+我在这里向你展示的一系列快照，我希望你注意到你可以
+
+recognize one or more objects in each and every one of those frames this is
+在每个帧中识别出一个或多个对象，这就是
+
+what we refer to as core object perception your ability to perform
+我们所说的 核心物体感知 你
+
+recognition abilities in the central 10 degrees of your visual field with just a
+在视野中央 10 度的范围内执行识别能力，只需
+
+couple hundred milliseconds of viewing duration i hope i illustrated for you
+几百毫秒的观看时间 我希望我能向你说明
+
+that your abilities are quite good at this we didn't discover this this has
+，你的能力非常擅长这一点 我们没有发现这一点
+
+been known for many decades in fact some of the pioneering work in by molly
+事实上，莫莉·波特 (molly
+
+potter and others doing designs like this rapid serial visual presentation
+potter) 和其他人所做的设计（例如这种快速串行视觉
+
+show that you're quite good at this so these are now completely out of context
+演示）的一些开创性工作已有数十年之久，这表明您对此非常擅长，因此这些现在完全脱离了上下文，
+
+yet you can recognize one or more objects in each and every scene you
+但您可以识别一个或多个对象 在每一个场景中，你
+
+probably just saw the Leaning Tower of Pisa and even though I didn't cue you
+可能刚刚看到了比萨斜塔，尽管我没有
+
+from in buildings in Italy so that is a reflection of how quickly your visual
+在意大利的建筑物中提示你，所以这反映了你的视觉
+
+system can digest these things and connect them to memory so let's come
+系统消化这些东西并将它们连接到记忆的速度有多快，所以让我们
+
+back to how do we work on that problem that problem that we consider to be
+回到我们如何解决这个问题，我们认为这个问题是
+
+foundational to larger scene understanding again that we call core
+更大场景理解的基础，我们称之为核心
+
+object perception so now our approach is to try to define and operationalize and
+对象感知，所以现在我们的方法是尝试定义和操作
+
+a domain of interest I've already done that a bit for you especially focus on
+我已经完成的感兴趣的领域 对你来说，特别关注
+
+where current engineering systems fall short then get measurements from the
+当前工程系统的不足之处，然后从对性能
+
+system components that are critical to performance and by that I mean the
+至关重要的系统组件中进行测量，我指的是
+
+biological components and here you must choose wisely
+生物组件，在这里你必须明智地选择，
+
+there's many things you could measure in the brain it's a complicated place you
+你可以在大脑中测量很多东西，它是 一个复杂的地方，你
+
+could measure behavior you could measure spikes you could measure anatomy blood
+可以测量行为，你可以测量尖峰，你可以测量解剖
+
+flow knurled you could do neural perturbations you could look sub
+血流，你可以进行神​​经扰动，你可以看起来
+
+similarly mess with genetics so you must choose wisely as to constrain your
+与遗传学类似，所以你必须明智地选择来限制你
+
+problem of interest then you can do forward engineering under these
+感兴趣的问题，然后你可以在下面进行正向工程 这些
+
+constraints so this is perhaps the most critical step to be able to organize
+限制，因此这可能是能够将
+
+those data into a model this is again referred to as model building and you
+这些数据组织到模型中的最关键的步骤，这又称为模型构建，您
+
+must be able to not only explain the data that you capture but predict new
+不仅必须能够解释您捕获的数据，还必须能够预测新
+
+data and it's this interplay between measurements and model building but
+数据，这就是这种相互作用 在测量和模型构建之间，但
+
+again I'm referring to as reverse engineering and then if you succeed in
+我再次指的是逆向工程，然后如果你成功了，
+
+that you can even grow your domain beyond the domain that I've defined you
+你甚至可以将你的领域扩展到我已经定义的领域之外，
+
+for instance in our problem to say expand beyond core perception to other
+例如在我们的问题中说超越核心感知扩展到其他领域
+
+problems as well but this is the approach that we try to take and I hope
+也存在问题，但这是我们尝试采用的方法，我希望
+
+that today I can summarize for you you'll see this approach as our progress
+今天我可以为您总结一下，您会看到这种方法，因为我们在
+
+on building what I'm calling end to end models a primate core object perception
+构建我所说的端到端模型灵长类核心物体感知方面取得了进展
+
+with this reverse engineering approach so let's talk about operationalizing
+逆向工程方法，所以让我们来谈谈
+
+where systems currently fall short object recognition is an interesting
+系统当前不足之处的操作。对象识别是一个有趣的
+
+problem because there's thousands of objects that's not what makes it
+问题，因为有数千个对象，这并不是使它具
+
+challenging as many of you already know your field knows quite well the reason
+有挑战性的原因，因为你们中的许多人已经知道您的领域非常清楚
+
+this problem is challenging is that the same object will never present the same
+这个问题具有挑战性的原因是相同的物体永远不会
+
+image to your eyes twice so that this this is due to things like variation and
+向您的眼睛呈现相同的图像两次，因此这是由于变化和
+
+position size pose illumination subordination clutter background clutter
+位置大小、姿势、照明、从属、杂乱、背景杂乱
+
+and even including clutter all of this makes this problem quite challenging as
+，甚至包括杂乱等因素造成的，所有这些都使这个问题变得相当具有挑战性，因为
+
+you know the way we approach this problem is to actually generate images
+您知道我们的处理方式 这个问题是实际生成像
+
+like this one these are much of the test images that we've been using in humans
+这样的图像，这些是我们在人类
+
+and monkeys they may look a little strange to you we call them naturalistic
+和猴子中使用的大部分测试图像，它们对你来说可能有点奇怪，我们称它们为自然主义，
+
+these are rendered objects placed on uncorrelated backgrounds the reason we
+这些是放置在不相关背景上的渲染对象，这是我们的原因 这样
+
+do this is because we found in 2009 that this would easily foil computer vision
+做是因为我们在 2009 年发现，这很容易挫败计算机视觉
+
+systems at the time that we're claiming to do object recognition yet humans
+系统，当时我们声称可以进行物体识别，但人类
+
+could do this quite well so we thought this isolated the problems of interest
+可以做得很好，所以我们认为这隔离了感兴趣的问题
+
+and so a lot of the data I'll show you comes from these kind of images but I'll
+，所以很多 我将向您展示来自此类图像的数据，但最后我将向
+
+show you some other data at the end from more photographic images okay to
+您展示来自更多摄影图像的其他数据，可以让
+
+convince you that you can do this here's how we actually test humans you can try
+您相信您可以做到这一点，这是我们实际测试人类的方式，您可以
+
+it yourself so images are presented again focusing on the
+自己尝试一下，所以图像 再次呈现，重点关注
+
+here eight degrees an image might come up like this and your job is to report
+这里的八度，图像可能会像这样出现，你的工作是报告
+
+what you saw I hope most of you could see that there was a face or a head in
+你所看到的，我希望你们大多数人都能看到该图像中有一张脸或一个头
+
+that image and you'd pick the left choice when I give you these two choices
+，你会选择左边选择当我给你这两个选择时，这
+
+here's another try for you so that was a bird and the one more I'll do the face
+是对你的另一种尝试，这是一只鸟，还有一个我会再做一次脸，
+
+again so you can get a feel for it we run these kind of trials on humans
+这样你就可以感受到它，我们对人类进行这些试验，
+
+and as you'll see monkeys we run them interleaved so you don't know what
+你会 看看猴子，我们交错运行它们，所以你不知道什么
+
+objects are coming yet you can do this quite well just like I didn't freak you
+物体即将到来，但你可以做得很好，就像我没有吓到你一样，
+
+you as to what you might be seeing here to show you that you do this quite well
+你可能在这里看到的东西向你展示你做得很好
+
+this is data from humans not exactly in this task but in a closely related task
+是来自人类的数据，不完全是在这个任务中，但在 y 轴上密切相关的任务中
+
+on the y-axis is performance and units of B prime to high V prime means good
+是性能，并且B 素数到高 V 素数的单位意味着良好的
+
+performance if you're not used to D prime for a D prime of four is about a
+性能，如果您不习惯 D素数为 4 的 D 素数是 大约
+
+98% accuracy and what I want you to see here is that humans are very very good
+98% 的准确率，我想让你在这里看到的是，人类非常非常好，
+
+they're shown in red and on the x-axis shows our very own objects in turn
+它们以红色显示，在 x 轴上显示我们自己的对象，依次显示
+
+objects to high variation and objects on the right where an object can appear as
+对象到高变化和右侧的对象，其中 正如我向您展示的那样，物体可能会
+
+I was showing you in many different poses and positions and and that's
+以许多不同的姿势和位置出现，这给
+
+creates more challenges for humans yet they hold up quite well in those
+人类带来了更多挑战，但它们在这些条件下表现得很好
+
+conditions computer vision systems at least at the
+计算机视觉系统至少在
+
+time that we were beginning this work around 2009 they fall off pretty poorly
+2009 年左右开始这项工作时它们会脱落
+
+in those conditions so we focused on this effort these area this area that we
+在这些条件下表现相当差，所以我们专注于这个领域，我们
+
+call view and record un variant recognition behavior for recognition
+称之为查看和记录识别行为的非变体识别行为的领域，
+
+behavior again we want a system that performs I've been talking about humans
+我们想要一个能够执行的系统，我一直在谈论人类，
+
+you all have a sense that you perform just by sitting there watching my slides
+你们都有一种执行的感觉只需坐在那里观看我的幻灯片，
+
+we use this system to study at the rhesus monkey system part of the reason
+我们就可以使用这个系统来研究恒河猴系统，这是
+
+we use the rhesus monkey as shown here monkeys can readily do this task almost
+我们使用恒河猴的部分原因，如下所示，猴子可以轻松地完成这项任务，几乎
+
+as well as you can they're easily trained to do this task this is a monkey
+和你一样好，它们很容易接受训练来做到这一点 任务 这是一只
+
+in its home cage pressing a button to initiate a trial you'll notice an image
+在笼子里的猴子，按下按钮启动试验，您会注意到出现一个图像，
+
+comes up and it's choosing left to right what object it thinks it saw the green
+它正在从左到右选择它认为看到的物体，绿色
+
+is light indicates correct trials you see is getting most of them correct and
+灯表示您看到的正确试验正在获得其中的大部分 正确，
+
+I'll show you the data in a minute they love to do this all day long and their
+我会在一分钟内向您展示数据，他们喜欢整天这样做，他们的
+
+homepage it's like video games for them and they get a small juice reward that
+主页对他们来说就像是视频游戏，他们会得到一点果汁奖励，
+
+you see through that to their okay so what's really interesting is
+你会看到他们的好，所以真正有趣的是
+
+when you test monkeys in this way and you compare with humans these are the
+当 你以这种方式测试猴子，并与人类进行比较，这些是
+
+data that you get on average the monkey performance is slightly lower than the
+你得到的平均数据，猴子的表现略低于
+
+humans but notice that the patterns of confusion shown in these matrices are
+人类，但请注意，这些矩阵中显示的混乱模式
+
+almost identical we've quantified that in these papers that I list below but
+几乎相同，我们已经量化了这些矩阵 我在下面列出的论文，但
+
+all I want you to see is that the patterns of reds and blues match up and
+我想让你看到的是红色和蓝色的图案相匹配，
+
+those show the confusion the difficulties of it can distinguishing
+这些显示了它的混乱，它的困难在于可以用
+
+objects from one another in deep rhyme units and don't worry about the details
+深层韵律单位区分物体，而不必担心细节
+
+of the data I just want you to know that they're about the same this is intuitive
+我只是想让你知道，它们大致相同，这是直观的，
+
+when I show you more closely camels are often confused with dogs those are 3d
+当我更仔细地向你展示时，骆驼经常与狗混淆，这些是 3D
+
+similar shapes tanks are often confused with trucks that's what's being
+相似的形状，坦克经常与卡车混淆，这就是
+
+reflected in his data although these matrices don't pop out if you run them
+他的数据中反映的内容，尽管这些如果你在
+
+on pixels or other simple visual representations and they didn't be they
+像素或其他简单的视觉表示上运行它们，矩阵就不会弹出，而且它们
+
+were not produced by computer vision systems at the time so these were kind
+当时不是由计算机视觉系统生成的，所以这些是
+
+of unique matrices where humans and monkeys were identical when we measure
+一种独特的矩阵，当我们测量时，人类和猴子是相同的
+
+this now this is averaging over many images in each category and I'm going to
+现在，这是对每个类别中的许多图像进行平均，我
+
+come back to that later but for now it means that we have a
+稍后会回到这个问题，但现在这意味着我们有一个
+
+system that models the system of interest that as the non-human primate
+系统可以对感兴趣的系统进行建模，因为非人类灵长类动物与非人类灵长类动物
+
+is almost identical to the human and most importantly the reason we're
+几乎相同 人类，最重要的是，我们
+
+working on a non-human primate is that we can go in and measure information
+研究非人类灵长类动物的原因是，我们可以进入并测量信息
+
+processing at the level of which vision occurs at the level of neuronal spikes
+处理的水平，视觉发生在神经元尖峰的水平，
+
+that I'll show you in a minute and we have more advanced tools now that allow
+我将在一分钟内向您展示，我们现在拥有更先进的工具，使
+
+us to manipulate those neurons to test ideas about how the circuits are
+我们能够操纵这些神经元来测试有关电路如何
+
+computing those are things that are not easily doable in humans and sometimes
+计算的想法，这些事情在人类中不容易做到，有时
+
+not doable at all in humans so we have our system that performs yet we can
+在人类中根本无法做到，因此我们拥有可以执行但我们可以
+
+engage with it the human brain is shown on the left the monkey brain on the
+参与的系统 左边是人脑，右边是猴脑，
+
+right both brains have a series of areas called the ventral visual stream that
+两个大脑都有一系列称为腹侧视觉流的区域来
+
+supports this task the reason we know this is that areas unlike ID cortex at
+支持这项任务，我们知道这一点的原因是，与腹侧流顶部的 ID 皮层不同的区域
+
+the top of the ventral stream that we'll talk a lot about lesions in these areas
+我们将大量讨论这些区域的病变会
+
+produce strong deficits in recognition tasks this has been known for decades
+在识别任务中产生严重的缺陷，这已经是几十年来众所周知的了，
+
+and what we also can do as engineers is take these areas and lay them out in
+作为工程师我们也可以做的是采用这些区域并以
+
+this way so I should highlight for you just to orient you that information
+这种方式布置它们，所以我应该向你们强调为了让你明白，信息
+
+comes in of course at the eyes which you see on the human brain it projects into
+当然是从你在人脑上看到的眼睛进入的，它投射到
+
+the middle of the brain and the thalamus a place labeled lgn on
+大脑中部和丘脑（幻灯片上标记为 lgn 的地方），
+
+slide and then projects to the first cortical area in the back of the brain
+然后投射到大脑后部的第一个皮质区域
+
+visual area v1 followed by a series of additional cortical areas in a deep
+视觉区域 v1 后面是深度
+
+stack network Network v2 v4 and IT and there are millions of neurons in each
+堆栈网络网络 v2 v4 和 IT 中的一系列附加皮质区域，每个区域都有数百万个神经元，
+
+area their feed-forward connections and feedback connections as well so this is
+它们的前馈连接和反馈连接也如此，所以这是
+
+a rough lay of the land of the ventral visual stream that's critical for the
+一个粗略的区域 腹侧视觉流对于
+
+tasks that I've been showing you each area is defined in part because there's
+我向您展示的任务至关重要，每个区域的部分定义是因为在流顶部的 i.t 皮层中存在
+
+a complete retinotopic map of the visual field in i.t cortex at the top of the
+完整的视野视网膜专题图，据
+
+stream there are thought to be about three Maps and it's much less
+认为大约有三个地图和 它的
+
+retinotopic but I'll consider it talk about us a day as if it's one area this
+视网膜主题要少得多，但我会考虑它每天谈论我们，就好像它是一个区域，
+
+a ventral stream is dominated by the central 10 degrees of visual field as I
+腹侧流由中央 10 度视野主导，正如我
+
+said earlier especially the upper reaches and what happens when an image
+之前所说，特别是上游，以及当图像
+
+is presented to this system the retina makes a nice copy if you will an
+呈现时会发生什么 对于这个系统，视网膜会做出一个很好的复制，如果你想要一个
+
+isomorphic pattern the retinal ganglion cells at the back of the eye are firing
+同构模式，眼睛后部的视网膜神经节细胞会
+
+at a one-to-one pixel wise manner with the image it produces a new population
+以一对一的像素方式与图像进行发射，它会在视网膜中产生新的
+
+pattern of activity in the LGN a new pattern in v1 v2 v4 and IP so you end up
+活动群体模式。  LGN 是v1 v2 v4 和 IP 中的新模式，因此您最终会
+
+in IP with about 10% of neurons firing in response to any natural image but
+在 IP 中约有 10% 的神经元响应任何自然图像而放电，但
+
+it's not a photographic copy anymore the brain has transformed the data from some
+它不再是照相副本，大脑已将数据从某个
+
+population space to another population space this occurs with a lag of about
+群体空间转换到另一个群体空间 这种情况发生时会有大约
+
+100 milliseconds new image produces a new pattern and IT and when you're
+100 毫秒的延迟，新图像会产生新的模式，而 IT 当您
+
+watching this rapid serial visual presentation movie that I showed you
+观看我之前向您展示的这部快速连续视觉演示电影时，
+
+earlier your homolog of IT is clicking along at a lag of about 100 milliseconds
+您的 IT 的同源物会以大约 100 毫秒的延迟
+
+easily following with a unique pattern for each and every one of these images
+轻松跟随这些图像中的每一个都有独特的模式
+
+what these patterns the reason we know something about what I'm showing you
+这些模式是什么 我们对我在这里向您展示的内容有所了解的原因
+
+here is that people have recorded and studied these neurons before I want to
+是，在我想让您感受基本数据之前，人们已经记录并研究了这些神经元
+
+give you a feel for the elemental data that drives this conceptual model
+驱动这个概念模型
+
+neurons communicate with each other which are with orwhat which are with
+神经元相互通信，这些神经元与
+
+what are called spikes that's all a neuron talks to another neuron spikes
+所谓的尖峰有关，这就是所有神经元与另一个神经元的尖峰对话，
+
+when you record with extracellular micro electrodes lowered into the brain are
+当您用放入大脑的细胞外微电极进行记录时，
+
+plotted here as individual tick marks from one single site recording an IP
+此处将其绘制为单个刻度线 记录 IP 的站点
+
+I this is a response to just four images repeated multiple times which is shown
+我这是对重复多次的四张图像的响应，
+
+as the Rose what I want you to notice here is that you see for the first two
+如玫瑰所示，我希望您注意的是，您会在前两张
+
+images more tick marks that is what's called a higher response and for the
+图像中看到更多刻度线，这就是所谓的更高响应，对于
+
+last two images less spikes a lower response this is just one IT neural site
+最后两张图像较少尖峰，响应较低，这只是一个 IT 神经站点，
+
+I want you to also notice the timescale here the image is presented for just 100
+我希望您也注意这里的时间刻度，图像仅显示 100
+
+milliseconds which is the bar shown at the bottom which is the core recognition
+毫秒，这是底部显示的条形图，这是核心识别
+
+conditions and you can see again a latency of about a hundred milliseconds
+条件，您可以 再次看到
+
+or so in this IT neuron here's a different IT neural site that respects
+在这个 IT 神经元中大约有一百毫秒左右的延迟 这是一个不同的 IT 神经站点，它尊重
+
+it prefers different images you see that it responds especially best to the
+它更喜欢不同的图像 你看到它对第二个图像的响应特别好 这个
+
+second image this a neural site responds best to the third and fourth so the IP
+神经站点对第三个和第四个图像的响应最好所以 当
+
+neurons appear somewhat unique when you sample them okay we can quantify all
+你对 IP 神经元进行采样时，它们看起来有些独特，好吧，我们可以量化所有
+
+this and we do the way we do this is by Counting spikes and time windows such as
+这些，我们这样做的方式是通过计算尖峰和时间窗口，例如
+
+these ones many neuroscientists are interested in the actual detailed
+这些，许多神经科学家对
+
+variability of these spikes we don't think this much matters for our
+这些尖峰的实际详细变化感兴趣，但我们不这样做。 我不认为这对我们
+
+questions of interest and so I'm not going to talk about that with you here
+感兴趣的问题很重要，所以今天我不会在这里与您讨论这个问题，
+
+today but just keep in mind that we can take the response of each neuron to each
+但请记住，我们可以将每个神经元对每个图像的响应
+
+image as a number so for instance here you're getting one single number by
+视为一个数字，例如这里您 通过对
+
+averaging over a time window which is a window of interest to us that we vary
+一个时间窗口进行平均来得到一个数字，这是我们感兴趣的窗口，我们会有所不同，
+
+but I won't talk much about that today just think about a hundred millisecond
+但今天我不会谈论太多，只是想一下一百毫秒的
+
+counting window where you get one number out of the neurons so here you're
+计数窗口，在这个窗口中你可以从神经元中得到一个数字 所以这里你
+
+getting four images you get four numbers we of course don't collect just four
+得到了四个图像 你得到了四个数字我们当然不会只
+
+images out of an example neuron but we collect many images shown here is in
+从一个示例神经元中收集四个图像，但我们收集了这里显示的许多图像，这是在
+
+another example IP neuron in response to 1600 test images so these bled this
+另一个示例 IP 神经元中响应1600 个测试图像，所以这些会流血
+
+black line is not time those are the response to images again the mean
+黑线不是时间，这些是对图像的响应，平均
+
+response is shown on the y-axis and spikes per second and what I want you to
+响应显示在 y 轴上和每秒的峰值，我想让您
+
+see is that this is a complicated pattern of response I'm showing you four
+看到的是，这是一个复杂的响应模式，我向您展示其中
+
+of those images of the type I showed you earlier with rendered objects on complex
+的四个 我之前向您展示的在复杂背景上渲染对象的图像类型
+
+backgrounds notice that you might tend to call this neuron a chair neuron a
+请注意，您可能倾向于将此神经元称为椅子神经元，
+
+group the images by category here but that would be incorrect because the
+此处按类别对图像进行分组，但这是不正确的，因为神经
+
+neuron responds better to some planes and some boats than to some images of
+元对某些飞机和某些船只的响应比对某些飞机和船只的响应更好对于一些椅子的图像来说，
+
+chairs all there is the weak categorical structure the response is much more
+分类结构很弱，反应
+
+complicated than that and people have spent careers or
+比这要复杂得多，人们花了职业生涯或
+
+decades really trying to understand what these neurons care about in the image
+几十年的时间来真正试图理解这些神经元在图像中关心什么，
+
+it's been a very challenging problem in our field here's another example it's
+这在我们的领域是一个非常具有挑战性的问题，这是另一个 例如，这是
+
+another way to put this as an IP neurons are like enigmatic that is not
+另一种表达方式，IP 神经元就像神秘
+
+understood snowflakes they appear individually unique here's another
+莫测的雪花，它们看起来各自独特，这是
+
+example from a neuron that you might call a face neuron this neuron responds
+来自神经元的另一个例子，您可以将其称为面部神经元，该神经元平均
+
+more to images of faces than to other things on average but in detail it likes
+对面部图像的反应比对其他事物的反应更多 但详细而言，它
+
+some images of faces better than other images of faces so it's incorrect to
+比其他面部图像更喜欢某些面部图像，因此
+
+strictly think of it as a categorical neuron it has some complicated
+严格将其视为分类神经元是不正确的，它具有一些
+
+properties that we don't yet understand or that we didn't understand when we
+我们尚未理解或我们开始时不理解的复杂属性
+
+started this work so the first thing that we aim to do in my lab now with
+因此，在这样的背景下，我们现在在实验室要做的第一件事
+
+that background is to ask how can these neuronal populations explain behavior
+就是问这些神经元群如何解释
+
+people thought I T has something to do with behavior but can it easily explain
+人们认为 I T 与行为有关的行为，但它能轻松解释
+
+behavior you might think this is a hopeless quest that you're going to have
+行为吗？你可能认为这是一个无望的探索 你将有
+
+an area where there's about 10 million output neurons and think about how you
+一个大约有 1000 万个输出神经元的区域，并考虑如何从
+
+could possibly read the code out of the neurons to explain how the animal is
+神经元中读取代码来解释动物的
+
+doing its behavior but we went ahead anyway and tried some obvious things
+行为方式，但我们还是继续前进并尝试了一些明显的事情
+
+that we thought might be good to try and I'll give you a sense of these things in
+我们认为尝试一下可能会很好，事实上我会让您对这些事情有一个了解，
+
+fact because they work quite well the basic idea is to think of IT as a
+因为它们运作得很好，基本思想是将 IT 视为一个
+
+feature space where each time you present an image such as this one you
+功能空间，每次您呈现这样的图像时，您都会
+
+get a pattern of evoked activity such as that shown here you have n neurons you
+得到 一种诱发活动的模式，如图所示，你有 n 个神经元，你
+
+have spikes coming out of n neurons you can count spikes of each neuron as I
+有 n 个神经元发出的尖峰，你可以计算每个神经元的尖峰，正如我
+
+showed you earlier so you get one number from each neuron so yeah n neurons we
+之前向你展示的那样，你从每个神经元得到一个数字，所以是的，n 个神经元，我们
+
+have n numbers you can think of as a population feature vector you can think
+有 n 个数字 你可以将其视为一个群体特征向量，你可以将
+
+of it as a point in an n-dimensional space so that's just for one image that
+其视为 n 维空间中的一个点，因此这只是对于恰好
+
+happens to contain a face here schematically shown might be the
+包含此处示意性显示的人脸的一张图像而言，这可能是
+
+imagined the responses of a population of AI t neurons to different images that
+想象中的 AI 群体的响应神经元到
+
+also contain faces and in red would be perhaps images of neurons that don't
+也包含面部的不同图像，并且红色可能是不包含面部的神经元的图像，
+
+contain faces this is just conceptual but the idea was could you decode easily
+这只是概念性的，但想法是你可以
+
+with simple readout tools like simple linear classifiers to say that a face
+使用简单的读出工具（例如简单的线性分类器）轻松解码，说一张脸
+
+has been presented versus a face has not been presented and of course you know
+已经被 呈现与面孔的对比尚未呈现，当然你很了解
+
+these tools well so I won't take you through that in detail but
+这些工具，所以我不会详细介绍这些工具，但
+
+you apply these simple linear classifiers to population patterns of IT
+你可以将这些简单的线性分类器应用于
+
+for every object task that we ask an animal to do and ask how well it can
+我们要求动物执行的每个对象任务的 IT 群体模式并询问它能在多大程度上
+
+predict the animals behavior and what I want to do from my neuroscience
+预测动物的行为，以及如果我的神经科学
+
+colleagues if they're already in the room is that this is not really that
+同事已经在房间里，我想从他们身上做些什么，这并不是一个
+
+really that crazy of an idea because if you think about whatever the downstream
+真正那么疯狂的想法，因为如果你考虑下游
+
+neurons are that are looking at AI T the classic models of neurons are weighted
+神经元的任何东西 正在研究 AI T 的神经元的经典模型是
+
+sums followed by thresholds which is essentially what a classifier is doing
+加权和，然后是阈值，这本质上是分类器正在做的事情，
+
+in any case we apply these simple linear classifiers to IT population data we get
+在任何情况下，我们将这些简单的线性分类器应用于 IT 群体数据，我们得到了
+
+very good predictions of the behavioral performance I'll show you that in a
+对行为表现的非常好的预测。我们很快就会向您展示，
+
+minute part of the reason that we're able to do
+我们能够做到
+
+this is that we had to really scale up to collect a large number amount of data
+这一点的部分原因是，我们必须真正扩大规模，收集大量数据
+
+to test those population vectors to do that we develop methods to implant
+来测试这些群体向量，以便我们开发出植入
+
+chronic and recording arrays in animals these are 100 channel arrays we
+慢性和慢性疾病的方法。 动物中的记录阵列这些是 100 个通道阵列，
+
+typically put three of them init once they're implanted in a sterile surgery
+一旦它们被植入无菌手术中，我们通常会将其中的三个初始化，
+
+and then the animal can be connected to recording each day while it performs
+然后动物可以连接到每天的记录，同时它执行
+
+visual tasks while we record large amounts of data
+视觉任务，同时我们记录大量数据
+
+these methods allow us and around 2000 intend to dramatically scale up the
+这些方法 允许我们在 2000 年左右打算大幅增加
+
+amount of data we collect in terms of number of images tested per day per site
+我们收集的数据量（每个站点每天测试的图像数量），
+
+and so we've leveraged that to build large population spaces a data from ite
+因此我们利用它来构建大型人口空间，来自 ite
+
+and other places here's typically what we get now on the
+和其他地方的数据通常是我们的 现在有
+
+order of a hundred to a thousand neurons in response to an image like this one
+一百到一千个神经元来响应像这样的图像，
+
+again I'm showing you one feature vector in response to one image here's eight
+我向您展示一个特征向量响应一张图像，这里有八张
+
+images and you can see the green now indicates high response the black low
+图像，您可以看到绿色现在表示高响应，黑色表示低响应
+
+response I hope you get the idea of this is just a simple feature vector like I
+我希望您明白这只是一个简单的特征向量，就像我
+
+showed a minute ago and we don't collect just eight images but we collect
+一分钟前展示的那样，我们不仅仅收集八张图像，而是
+
+thousands of images on the order of 2,000 images or so in a typical data set
+在典型的数据集中收集了大约 2,000 张图像左右的数千张图像。
+
+you can collect many more than that but part of the reason then the sets I'll
+可以收集更多，但部分原因是我将向
+
+show you we only have 2000 as we use a lot of our presentations to repeat
+您展示我们只有 2000 个集合，因为我们使用大量演示来重复
+
+conditions on the order of 50 times or so to get very high SNR in our
+大约 50 次左右的条件，以便在我们的测量中获得非常高的 SNR
+
+measurements of these neurons so these are the kind of data sets that we've
+这些神经元的数据集是我们
+
+worked with over the last few years and the summary of the story i've already
+在过去几年中使用的数据集，我已经提到过的故事摘要
+
+alluded to which is that if you take these population patterns and you look
+是，如果你采用这些人口模式并
+
+at those behavioral patterns that i showed you earlier and you apply simple
+观察这些行为模式 我之前向您展示过，您将简单的
+
+linear decoder to IT that you automatically get those
+线性解码器应用于IT，您会自动获得这些
+
+kind of behavioral patterns and we show this is almost quantitatively perfect at
+行为模式，并且我们表明，
+
+this grain when you do this so this suggests that I T cortex almost directly
+当您这样做时，这在数量上几乎是完美的，因此这表明 I T 皮层几乎
+
+can supports the animals behavioral judgments of what kind of object it sees
+可以直接支持动物的行为判断它在世界上看到什么样的物体，
+
+out there in the world and I should say that controls show that if you apply
+我应该说，控制表明，如果你将
+
+this to say retina like data or early visual cortex data you don't get these
+其应用于视网膜类数据或早期视觉皮层数据，你不会得到这些
+
+exact same patterns it's not as if linear decoders applied to any
+完全相同的模式，这不像线性解码器 应用于任何
+
+representation produced it okay a key thing that I'd like you to know is
+表示都可以产生效果，我想让你知道的一个关键事情是，
+
+you don't need many IT features to get this human level performance that you
+你不需要太多 IT 功能来获得人类水平的性能，就像你
+
+see in a monkey on the order of about 500 IT features whether estimate this is
+在猴子身上看到的大约500 个 IT 功能一样，是否可以估计这一点 是
+
+a bit of an or older slide and we've confirmed this with newer data and I
+一张或更旧的幻灯片，我们已经用更新的数据证实了这一点，我
+
+want to contrast that to computer vision models at the time which had much lower
+想将其与当时的计算机视觉模型进行对比，当时计算机视觉模型的
+
+performance per feature at the time so this was a clue to us that hey a
+每个功能的性能要低得多，所以这是我们的一个线索，嘿
+
+relatively low dimensional feature set it's probably what's supporting the
+相对低维的特征集，它可能支持
+
+animals ability and that's probably what you want your computational model to
+动物的能力，这可能就是你希望你的计算模型
+
+look like you know now this is a reminder i.t contains about 10 million
+看起来像你现在知道的那样，这是一个提醒，它包含大约 1000 万个
+
+output neurons we think it conveys on the order of less than a thousand
+输出神经元，我们认为它传达的数量级不到一千个
+
+features and this is supported by other work by Sidney Leckie estimated
+特征，这得到了Sidney Leckie 的其他工作的支持 估计
+
+dimensionality of IT what about other properties of naira of what you can get
+IT 的维数你可以从 IT 中得到什么奈拉的其他属性
+
+out of IT I told you about category and identity what about things like position
+我告诉过你关于类别和身份 位置
+
+or perimeter size or bounding area rotation those are other Lane variables
+或周长大小或边界区域旋转之类的东西是什么
+
+that you might want to estimate well we went ahead and because we had measured
+您可能想要很好地估计的其他车道变量，我们继续进行，因为我们已经测量了
+
+these and we knew all these properties from these images we created we've
+这些变量，并且我们从我们创建的这些图像中了解了所有这些属性，我们
+
+estimated human ability to judge these variables and when we do that and we
+估计了人类判断这些变量的能力，当我们这样做时，我们
+
+make those measurements of behavioral performance patterns and we apply linear
+进行了这些测量我们再次将线性
+
+decoders again to IT now using regression instead of a classification
+解码器应用到IT中，现在使用回归而不是分类，
+
+again only about 500 features predicts the behavioral patterns again almost
+只有大约500个特征几乎完全准确地再次预测了行为模式，
+
+exactly and this is quite remarkable the same number of features comes out with a
+这是非常引人注目的，相同数量的特征采用
+
+completely different approach so and this this really supports the idea that
+完全不同的方法得出，因此这确实支持了这样的观点，即
+
+IT is a general basis to support a whole range of object perception tasks now the
+IT 是支持一系列对象感知任务的通用基础，现在
+
+specific parameters of how we do the decoding and the regression are of
+我们如何进行解码和回归的具体参数当然对于
+
+course important too neuroscience related applications but I
+神经科学相关的应用程序也很重要，但我
+
+won't talk about them here for you today I want to also highlight the work here
+不会谈论它们 今天在这里，我还想强调一下这里的工作，
+
+allowing and showing that IT can support this is really done by a number of
+允许并表明 IT 可以支持这一点，这实际上是由许多
+
+investigators some postdocs graduate students and even an undergrad shown
+研究人员、一些博士后研究生，甚至是一名本科生完成的，
+
+here over a number of years all the work I'm summarizing for you in this slide
+这里展示了多年来我总结的所有工作 在这张幻灯片中，
+
+but what I want you to take from this so far and this is just a big picture
+但我希望您从中得到的
+
+message is that the IP feature set is biology's underlying solution to
+信息是，IP 功能集是生物学的底层解决方案，可以
+
+officially support maybe most maybe all core object perception challenges with
+通过
+
+simple linear classification I want to caveat that by saying I'm talking about
+简单的线性分类正式支持也许大多数也许所有核心物体感知挑战 需要注意的是，我正在谈论
+
+the central 10 degrees 200 milliseconds duration rigid objects and only a
+中心 10 度 200 毫秒持续时间的刚性物体，并且只有我们要求估计的一
+
+certain certain set of latent variables that we asked to be estimated so we
+组特定的潜在变量，因此我们
+
+haven't tested everything possible but this domain is already quite large and
+没有测试所有可能的东西，但这个域已经相当大了 并且
+
+still fits the behavioral data quite well so we have a linkage between IT and
+仍然非常适合行为数据，因此我们在 IT 和行为之间建立了良好的联系，
+
+behavior that's now well-established ok this is as I've already said you should
+这就是我已经说过的，您应该
+
+think of ideas a relatively fixed basis set with little backend training to
+考虑一个相对固定的基础集，几乎不需要后端培训来
+
+support many object related tasks ok this is just setting up the deeper
+支持许多与对象相关的想法 任务好吧，这只是设置更深层次的
+
+problem which is I told you these IT neurons were complicated and now I'm
+问题，我告诉过你这些 IT神经元很复杂，现在我
+
+telling you when you take a bunch of complicated neurons and a smaller set of
+告诉你，当你使用一堆复杂的神经元，其中一小部分
+
+them can support the behavioral tasks where do the IT neurons come from
+可以支持行为任务时，IT 神经元在哪里 神经元来自于
+
+themselves how are they computed from the image on the retina and how do those
+它们本身，它们是如何从视网膜上的图像计算出来的，以及出生后如何
+
+computations here on the ventral stream get set up after birth
+在腹侧流上进行这些计算，
+
+ok so when we were doing this work of course this was one of our other goals
+所以当我们做这项工作时，当然这是我们的其他目标之一，而
+
+not just to measure IT but to try to build models that go from the image to
+不仅仅是测量 但要尝试构建从图像到
+
+each intermediate level ultimately predicting IT and I want to say that we
+最终预测 IT 的每个中间级别的模型，我想说的是，我们
+
+focus especially on feed-forward models and at the time when we were doing this
+特别关注前馈模型，在我们进行这项
+
+work people had already explained lower level of areas like v1 with reasonable
+工作时，人们已经解释了较低级别的信息技术。 像 v1 这样具有合理
+
+models you've probably seen Gabor like models to explain v1 the field debates
+模型的领域，您可能已经见过 Gabor 之类的模型来解释 v1，该领域争论了
+
+how much but explaining about half the explainable response variance in v1
+多少，但解释了v1 中大约一半的可解释响应方差，
+
+whereas other image computable models we're explaining very little variance in
+而其他图像可计算模型我们解释了 IT 中很少的方差，
+
+IT on the order of 20% or less with with a gradual fall off across the ventral
+大约为 20% 或更少，随着腹侧流逐渐下降，
+
+stream so we really had pretty poor models to go along the ventral stream at
+所以当时我们确实有非常糟糕的模型沿着腹侧流现在现在
+
+the time now all the models I'm going to talk about too next they basically they
+我接下来要讨论的所有模型他们基本上都
+
+do the whole task that the animal does they just take an image such as this one
+完成了整个任务 他们只是拍摄一张像这样的图像
+
+and the central eight degrees and they try to make a feature space out of it
+和中央八度的图像，然后尝试从中创建一个特征空间，
+
+and then a linear classification step at the end all of these models are
+然后在最后进行线性分类步骤，所有这些模型
+
+basically built off of constraints from brain science so as I said forward
+基本上都是在大脑的约束下建立的正如我在
+
+engineering at the beginning of my talk within constraints these are constraints
+演讲开始时所说的正向工程，在限制范围内，这些都是
+
+from neuroscience and I won't read them all to you because you probably know
+神经科学的限制，我不会把它们全部读给你听，因为你可能已经知道
+
+them all already they're the constraints that led to the family of deep
+它们了，它们是导致深度卷积家族的限制
+
+convolutional networks these are the said here inwards filters convolution
+这些网络就是这里所说的向内过滤器、卷积阈值、
+
+threshold nonlinearities normalization people have known for decades that these
+非线性归一化，人们几十年来就知道这些
+
+are the kind of things that the brain's deep Network uses two processes date
+是大脑深层网络使用两个过程的东西，数据
+
+process its inputs and models to do recognition were started way back in
+处理其输入和模型来进行识别，早在
+
+1980 by Fukushima this was later followed you can see this has a kind of
+1980 年，福岛就开始了这个后来你可以看到，它有一种
+
+kind of layout sort of like the ventral stream it was made more like the ventral
+布局，有点像腹侧流，它变得更像腹侧
+
+stream and models of the H max class by Tommy Poggio Thomas air max rise in
+流，而汤米·波吉奥·托马斯 (Tommy Poggio Thomas) 的 H max 级模型
+
+humor in this endeavor in 1999 to 2007 or so Dave Cox and Nicolas Pinto built
+在 1999 年的这一努力中幽默地上升到 2007 年左右，Dave Cox 和 Nicolas Pinto 在此课程之后建立了
+
+another class of models following off of this class that made progress especially
+另一类模型，特别是
+
+on problems and face processing and then I want to tell you about this model
+在问题和面部处理方面取得了进展，然后我想向您介绍这个
+
+called HMO that that we made in our lab by a postdoc Dan Yemen who's now
+名为 HMO 的模型，它是我们实验室的博士后 Dan 制作的 Yemen 现在是
+
+assistant professor at Stanford and a graduate student AHA hyung and I want to
+斯坦福大学的助理教授，也是一名研究生 AHA hyung，我想向
+
+tell you about HMO not that it's a specialty performing model that you
+您介绍 HMO，并不是说它是一个您应该了解的专业执行模型，
+
+should know about but that it taught us some important lessons about how models
+而是它教会了我们一些重要的教训，即模型
+
+can explain what's going on in the brain and I hope to share those with you okay
+如何解释正在发生的事情 大脑，我希望与你分享这些，好吧，
+
+so what is HMO HMO is a deep neural network we built it to have four layers
+那么什么是 HMO HMO 是一个深度神经网络，我们构建它有四层，
+
+roughly corresponding the four layers that I've been talking about in the
+大致对应于我一直在皮质中讨论的四层，
+
+cortex we included those steps that I had
+我们包括了我所执行的步骤
+
+talked about earlier make it convolutional many filter types things
+之前谈到的使其成为卷积的许多滤波器类型，
+
+that I think folks in this room know well so what we think of this is that
+我认为在座的人都非常了解这些事情，所以我们认为
+
+neuroscience was constraining what I call the macro and the mezzo
+神经科学在内部限制了我所说的宏和中层
+
+architecture internally it had again linear filters followed by static
+架构，它再次具有线性滤波器，然后是静态
+
+nonlinearities and a normalization or pooling step again things that I think
+非线性和 标准化或池化又一步，我认为
+
+this audience knows well that are now standard fare in deep neural networks
+观众很清楚这些现在是深度神经网络的标准票价，
+
+these were things that we thought we had to include because this is what
+这些是我们认为必须包括的东西，因为这是
+
+neuroscience was telling us then what Dan and ha did was to try to get these
+神经科学告诉我们的，然后Dan 和 ha 所做的是尝试 获得这些
+
+models and optimize to do the kind of things that many of
+模型并进行优化以完成许多人
+
+you like to do is get them to do something interesting
+喜欢做的事情就是让它们做一些有趣的事情，
+
+so we optimized them to do view and variant recognition tasks over a large
+因此我们优化了它们以在大量对象上执行视图和变体识别任务，
+
+number of objects and the this was done using a bunch of applied math and
+这是使用一堆应用数学和
+
+computer science tricks and I don't think those are biological but and I
+计算机科学技巧，我不认为这些是生物学的，但我
+
+want to say for the aficionados what we were doing was mostly architectural
+想对爱好者们说，我们所做的主要是架构
+
+detail optimization not so much weight optimization although we now do more
+细节优化，而不是重量优化，尽管我们现在做了更多的
+
+weight optimization yet we were still able to through these
+重量优化，但我们 仍然能够通过这些
+
+kind of architectural optimizations and that was using things like hyperope
+架构优化，并且使用
+
+developed by James Bergstrom Dave Cox using those kind of optimizations to
+James Bergstrom Dave Cox 开发的 hyperope 之类的东西，使用这些优化来
+
+find models in this space that were actually quite good at performing at
+找到这个空间中的模型，这些模型实际上
+
+relative to control models at the time that I'm showing you here at the bottom
+相对于我当时的控制模型表现得非常好我在底部向您展示，
+
+so we got we at least got our HMO model up to the level of IT and human
+所以我们至少让我们的 HMO 模型达到了 IT 和人类
+
+performance we had achieved a decent optimization I want to say there was no
+表现的水平，我们已经实现了不错的优化。我想说的是，
+
+neural fitting in these models no unlike current other neuroscientists that are
+这些模型中没有神经拟合，这与当前其他神经科学家不同
+
+trying to fit neural data directly we were just doing engineering within a
+试图直接拟合神经数据，我们只是在
+
+space of neuroscience and optimizing like many of you might do okay then the
+神经科学领域进行工程和优化，就像你们中的许多人可能做的那样，然后
+
+last thing we did that's quite interesting is we took these neurons and
+我们做的最后一件事非常有趣，我们采用了这些神经元和
+
+these models and we asked compare them to the neurons that we had recorded in
+这些模型，我们要求将它们与 我们在
+
+IP cortex and its input area v4 using similar recording methods to those I
+IP 皮层及其输入区域 v4 中记录的神经元，使用与我之前展示的记录方法类似的记录方法，
+
+showed earlier the way we compared them was to use the neurons within the model
+我们比较它们的方式是使用模型内的神经元
+
+as a basis set so we use the IP basis in the model as to try to fit individual IP
+作为基础集，因此我们在模型中使用 IP 基础作为尝试将单个 IP
+
+neurons in the actual IP of the brain and similar for v4 and we then tested
+神经元拟合到大脑的实际 IP 中，与 v4 类似，然后我们
+
+the goodness of prediction using held-out data and I'll show you some of
+使用保留的数据测试预测的有效性，现在我将向您展示
+
+those predictions now here is this IT neuronal population patterns if I take
+其中一些预测，这是 IT神经元群体模式，如果 我举
+
+one example neuron out I show you this neuron earlier has a very complicated
+一个神经元的例子，我向你展示这个神经元之前有一个非常复杂的
+
+response it was hard to explain the response old models predicted only 20%
+响应，很难解释这个响应，旧模型只预测了 20%
+
+of the variants now we have this new model HMO table you do a regression and
+的变异，现在我们有了这个新模型 HMO 表，你可以进行回归，
+
+these are the predictions on held-out data and you can see how tight this fit
+这些是预测 在保留的数据上，你可以看到这种配合有多紧密，
+
+is as I'll highlight here for you it fits it got a lot of the detail of the
+正如我将在这里为你强调的那样，它适合它在这个 IT 神经元中获得了
+
+response to individual images here in this IT neuron but again we're
+对单个图像的响应的很多细节，但我们
+
+previously very mysterious doesn't fit everything it explains about half the
+之前还是非常神秘的 并不适合它解释的所有内容，大约有一半的
+
+explainable response but that was a really big jump over
+可解释响应，但这比
+
+previous model so this was quite exciting for us that now some of these
+以前的模型有很大的飞跃，所以这对我们来说非常令人兴奋，现在这些
+
+enigmatic snowflakes started to be understandable in the context of these
+神秘的雪花中的一些开始在这些模型的背景下变得可以理解，
+
+models here's this phasor and I showed you earlier it also is again quite well
+这是这个相量 我之前向您展示过，它也可以
+
+predicted by the HTML basis at level of IP so you can see that as well here's a
+通过 IP 级别的 HTML 基础进行很好的预测，因此您可以看到，这里还有一个
+
+v4 neuron this is the input I T its responses may look even more complicated
+v4 神经元，这是输入 I T，它的响应对您来说可能看起来更加复杂，
+
+to you because it has very even almost no categorical structure yet we found
+因为它几乎具有非常均匀的还没有分类结构，我们发现
+
+that the models especially the second-to-last hidden layer layer 3 or
+模型，特别是倒数第二个隐藏层第 3 层或
+
+what we called our v4 layer was able actually to predict it again quite well
+我们所说的 v4 层实际上能够很好地再次预测它，
+
+as you see the red line overlying the black line here from layer 3 this again
+正如你看到的红线覆盖在第 3 层的黑线上 这再次
+
+brought us from old models explaining 30% to new models explaining about half
+将我们从解释 30% 的旧模型带到了解释大约一半
+
+the explainable response frames these are predictions for mid-level neurons
+可解释响应帧的新模型，这些是对中层神经元的预测，这些神经元
+
+that did not see any of these objects during creation so this model was just
+在创建过程中没有看到任何这些对象，因此该模型只是
+
+optimizing some objects and then test it on completely new stuff to explain IT no
+优化一些对象，然后对其进行测试在解释 IT 的全新内容上，
+
+neural data were used as I said to generate the model neurons and the model
+正如我所说，没有使用神经数据来生成模型神经元，并且该模型
+
+is not a black box this is really for my neuroscience colleagues that this is a
+不是黑匣子，这对于我的神经科学同事来说确实是这样，这是
+
+model we built it we can map its internals to the brain so it helps us in
+我们构建的模型，我们可以将其内部映射到 大脑，所以它可以帮助我们实现
+
+our neuroscience goals the meta lesson we took from this beyond having better
+神经科学目标，我们从中学到的元教训不仅仅是有更好的
+
+models of explaining IP is shown here and maybe this is the most important
+解释 IP 的模型，这可能是这个小组最重要的
+
+lesson for this group is that performance of deep CN NS is shown on
+教训是深度 CN NS 的性能显示在
+
+the x-axis and the ability of a model to fit IT anyway I just show you is on the
+x- 轴和模型适应 IT 的能力，无论如何，我只是向您展示的是
+
+y-axis so what you're seeing here in the blue dots are samples and models from a
+y 轴，所以您在蓝点中看到的是来自
+
+deep CN n family they're not optimized in any particular way and in black
+深层 CN n 系列的样本和模型，它们没有在任何特定方面进行优化 黑色的方式，当
+
+you're seeing other models in the field at the time that we did this work and
+我们做这项工作时，你会看到该领域的其他模型，
+
+what I want you to notice is there's a correlation between the X and the y-axis
+我想让你注意到X 轴和 y 轴之间存在相关性，
+
+and what we think we did was doing something like you might think of
+我们认为我们所做的是做类似的事情 你可能会想到
+
+evolution or development we optimized along this axis to perform on a
+进化或发展，我们沿着这个轴优化来执行
+
+recognition task we got a model we called HMO and it increased the amount
+识别任务，我们得到了一个我们称为 HMO 的模型，它增加了
+
+of variants we could explain within the higher levels of the ventral visual
+我们可以在腹侧视觉流的更高水平中解释的变体数量，
+
+stream especially i.t cortex ok this was again exciting to us and what this means
+特别是皮层，好吧，这是再次让我们兴奋，这对
+
+for all of you is that we were kind of doing a computer vision goal and that
+你们所有人来说意味着我们正在做一个计算机视觉目标，这
+
+was enabling a neuroscience goal as you see here and so um we thought well
+正在实现神经科学目标，正如你在这里看到的，所以嗯，我们
+
+now here we are as brain and cognitive sciences trying to build this models and
+现在认为我们作为大脑和认知科学正在尝试 为了构建这个模型，
+
+I described a line of models already to you and their roots and our goal was to
+我已经向您描述了一系列模型及其根源，我们的目标是
+
+understand how the brain works but your field in particular has been doing
+了解大脑如何工作，但您的领域特别是
+
+things around engineering high-performance algorithms and your
+围绕工程高性能算法开展工作，
+
+field as you know has especially had a line of work recently that has been come
+正如您所知，您的领域特别是最近有一系列工作
+
+to the fore which began really a long time ago with neural network models that
+脱颖而出，这些工作很久以前就开始了，神经网络模型
+
+have now become very exciting again especially to us we notice the work of
+现在再次变得非常令人兴奋，特别是对我们来说，我们注意到
+
+Yann McCune geoff hinton Sylar and Fergus and others that you know this
+Yann McCune、geoffhinton Sylar 和Fergus 以及其他人的工作 我知道这项
+
+work was really represents a convergence I think between these two fields in
+工作确实代表了模型构建中这两个领域之间的融合
+
+their model building and this is good news because now we may be working on
+，这是个好消息，因为现在我们可能正在研究
+
+the same problem so you all know about the breakthroughs in deep learning that
+同一问题，所以你们都知道深度学习中
+
+were spurned buffered by Alex net winning the imagenet Challenge in 2012
+被 Alex net 缓冲的突破在 2012 年和 2013 年赢得 imagenet 挑战赛后，
+
+in 2013 we decided to compare alex net features and Zeiler and furgus features
+我们决定将 alex net特征以及 Zeiler 和 furgus 特征
+
+to what we were seeing an IT cortex and this was done by Charles Godot a postdoc
+与我们所看到的 IT 皮层进行比较，这是由博士后 Charles Godot 完成的，
+
+and I just want you to see in this slide how well that the ID features and the
+我只想让您在这张幻灯片中看到这有多好 ID 特征以及
+
+alex net and island fergus features line up in terms of their ability to support
+alex net 和 island fergus 特征在支持
+
+categorization performance much better than control models the most interesting
+分类性能方面比控制模型更好，
+
+thing to us though was that these models were able to predict the IP neurons even
+但对我们来说最有趣的是这些模型能够
+
+better than our HMO models so they were higher performing and they predicted the
+比我们的 HMO 更好地预测 IP 神经元 模型的性能更高，并且可以
+
+neurons better which is shown here in this plot so this suggests that at least
+更好地预测神经元，如图所示，这表明至少在
+
+within this time window models are being developed that are higher performing in
+这个时间窗口内，正在开发在
+
+the deep net family and they're explaining the internals of the brain
+深网家族中性能更高的模型，并且它们正在解释神经元的内部结构
+
+better and better at least up to this point so that's quite exciting medal
+至少到目前为止，大脑越来越好，所以这是非常令人兴奋的奖牌
+
+lesson I want to say also that there's also been great work I'm showing you
+课程我还想说，我向你们展示了神经方面的工作，还有一些伟大的工作，
+
+neural work there's been work on human fMRI by a number of labs on kreega's
+许多实验室在克雷加的奥利维亚
+
+corteo olivia at MIT Jacquelyn tangent Andra Malik at Berkeley on Justin
+皮质上进行了人类功能磁共振成像的工作 麻省理工学院的杰奎琳 (Jacquelyn) 与伯克利分校的安德拉·马利克 (Andra Malik) 的贾斯汀·加德纳 (Justin
+
+Gardner who have been using these same kind of deep nets to explain what's
+Gardner) 的切线，他们一直在使用这些相同类型的深度网络来解释以
+
+measured at human fMRI at a coarser resolution but also showing the same
+较粗的分辨率在人类功能磁共振成像中测量的内容，但也表明了相同的
+
+idea that these models are able to better fit the variance of the responses
+想法，即这些模型能够更好地拟合
+
+at higher levels of the visual system so I really would like to say this really
+视觉系统更高层次的反应，所以我真的想说，这真的
+
+is a heartfelt thank you to all of you because even models even if you didn't
+是对你们所有人的衷心感谢，因为即使是模型，即使你们不
+
+know people in your field we're building
+认识您所在领域的人，我们正在构建的
+
+models that are helping us to understand the brain we are working toward the same
+模型可以帮助我们 了解我们正在朝着同一个目标努力的大脑，
+
+goal I'd say at the moment but will this relationship last that's the question
+我现在会说，但是这种关系会持续下去，这是
+
+that we're trying to keep our eyes on at the moment so if you think about where
+我们目前正在努力关注的问题，所以如果你考虑一下
+
+these models are going you know your field quite well much of your work has
+这些模型的发展方向，你就知道 你的领域很好，你的大部分工作
+
+now gravitated toward using these deep nets as the foundation for much of what
+现在都倾向于使用这些深层网络作为
+
+you do more advanced models are of course coming out that you know even
+你所做的大部分事情的基础，当然，更先进的模型正在出现，你
+
+better than I do but our questions are do these models start to explain the
+比我更了解，但我们的问题是这些模型是否开始
+
+brain even better than the models that we had in the past and so it's good to
+比我们过去的模型更好地解释大脑，所以最好
+
+sit back and let you continue to build models and we can maybe test to see if
+坐下来让你继续构建模型，我们也许可以测试
+
+they're working or not we'll build models all on our own I want to show you
+它们是否有效，我们将在我们的模型上构建模型 我想向您展示一个问题，
+
+kind of though the question of can we just sit back and wait for you to hand
+即我们是否可以坐下来等待您向
+
+us even better models and I'm not so sure that that's going to work and the
+我们提供更好的模型，我不太确定这是否会起作用，
+
+reason to that is shown here this is a recent slide from our lab relatively new
+原因如下所示，这是一个我们实验室最近的幻灯片又相对较新，
+
+again what you're seeing is a computer vision goal of image data validation
+您看到的是 x 轴上的图像数据验证性能的计算机视觉目标，
+
+performance on the x-axis and our goal fitting neurons on the y-axis and
+以及y 轴上的神经元拟合目标，
+
+there's some models developed in our lab shown as the orange dots you see the
+我们实验室开发的一些模型显示为橙色 您会看到
+
+continuation of that trend that I showed you earlier higher performing models
+这种趋势的延续，我之前向您展示了更高性能的模型
+
+tend to fit IT better at least within an architectural space that we're using but
+往往更适合 IT，至少在我们正在使用的架构空间内，但
+
+now here are some models from your field Alix net ResNet vgg exception they are
+现在这里有一些来自您所在领域的模型Alix net ResNet vgg 当然，它们是例外
+
+of course higher performing you guys are better at computer vision engineering
+表现更高的你们在计算机视觉工程方面
+
+than we are so that's good but the models are not yet not doing any better
+比我们更好，所以这很好，但是这些模型
+
+in explaining data then say Alex Ned did even a few years ago so things may not
+在解释数据方面还没有做得更好，就像亚历克斯·内德几年前所做的那样，所以事情可能不会朝着
+
+be moving in the same direction and our job is to find models within this space
+同一个方向发展， 我们的工作是在这个空间中找到与
+
+that stay close to what we're seeing in the biology so a summary of what I've
+我们在生物学中看到的模型保持接近的模型，所以我
+
+told you is that our field camp together achieve the first decent predictive
+告诉你的总结是，我们的野外训练营共同实现了每个神经处理阶段的第一个像样的预测
+
+models of each of these neural processing stages and what's left so
+模型还剩下什么，所以
+
+should I retire we have decent models about half the explainable variance what
+如果我退休了，我们有不错的模型，大约有一半的可解释方差，
+
+to do next well let's just talk about the behavior a little bit so remember
+下一步该做什么，让我们稍微讨论一下行为，所以记住，让
+
+let's just I told you about the behavior before so ignore the internals of the
+我们只是我之前告诉过你的行为，所以忽略大脑的内部结构，
+
+brain and just let's look at how things are explaining the behavior I showed you
+只是 让我们看看事物是如何解释我之前向您展示的行为的，
+
+early on that humans and monkeys had this interesting common pattern of
+人类和猴子有这种有趣的共同
+
+fusion that they shared and that's why we use the monkey model but now we can
+融合模式，它们共享，这就是我们使用猴子模型的原因，但现在我们可以
+
+put up a deep CN n and you can see it actually has a very similar pattern of
+建立一个深度 CN n，您可以看到 它实际上有一个非常相似的
+
+confusion if anything it reveals itself as being slightly better when you see
+混乱模式，如果有什么东西它显示自己稍微好一些，当你看到
+
+the blue spots in the corner that's showing it's doing a little bit better
+角落里的蓝点时，这表明它
+
+than these other systems this is inception v3 but we could pick
+比其他系统做得更好一点，这是 inception v3，但我们可以选择其中
+
+any of those deep cnn's and they're going to look very similar this means
+任何一个 深度CNN，它们看起来非常相似，这意味着
+
+that this level of resolution these behavioral tests do not allow us to
+这种水平的分辨率，这些行为测试不允许我们
+
+falsify or distinguish among these deep CN NS which one may be more or less
+伪造或区分这些深度CNN NS，哪个可能或多或少像
+
+brain like so what we did is good experimentalist and say let's turn up
+大脑，所以我们所做的是优秀的实验家 并说让我们加大
+
+the heat on the models let's get more data so this team in my lab said about
+模型的热度，让我们获得更多数据，所以我实验室的这个团队说要
+
+to collect more data both human data from Amazon Mechanical Turk and monkey
+收集更多数据，包括来自 Amazon Mechanical Turk 的人类数据和猴子
+
+home cage testing as I showed you earlier
+笼子测试，正如我之前向您展示的
+
+lots of behavioral data and when we do that we can now zoom in at higher
+大量行为数据一样，当我们 做到这一点，我们现在可以以更高
+
+resolution to say now rather than averaging over images we can say safer
+分辨率放大，而不是对图像进行平均，我们可以说更安全，
+
+these images of a wrench probability that each image of a wrench is
+这些扳手的图像概率是扳手的每个图像都不
+
+incorrectly it's correctly called a wrench as shown in the upper left here
+正确，它被正确地称为扳手，如左上方所示，
+
+or we can look at the probability that each image of a hammer is incorrectly
+或者我们 可以查看每个锤子图像被错误地
+
+called a wrench and you can see that there's strong variation within the
+称为扳手的概率，并且您可以看到图像中存在很大的变化，这
+
+images probably not surprising to all of you and now we can measure this reliably
+可能对你们所有人来说并不奇怪，现在我们可以在行为层面可靠地测量这一点，
+
+at the behavioral level because we have many many many trials millions of trials
+因为我们有很多很多 许多试验数以百万计的试验
+
+built into these kinds of data and you see you I'm showing you data here from a
+内置于这些类型的数据中，你看，我在这里向你展示来自
+
+biological system a primate system but we can of course take any model feature
+生物系统灵长类动物系统的数据，但我们当然可以采用任何模型特征
+
+set and generate these exact same tests of a model now looking at much finer
+集并生成与现在看起来的模型完全相同的测试 以更精细的
+
+resolution and ask how well these two things correlate with each other
+分辨率，并询问这两件事相互关联的程度如何，
+
+I will now first show you that monkeys correlate still very well with humans
+我现在将首先向您展示，即使在更精细的分辨率下，猴子与人类的关联仍然非常好，
+
+even at this finer grain of resolution so that's good the primate system is
+所以很好，灵长类动物系统
+
+still matching the other primate system that's what you see in the red versus
+仍然与其他灵长类动物系统相匹配你在红色和蓝色条中看到的东西，
+
+the blue bar but now here's a bunch of artificial feature sets that before we
+但现在这里有一堆人工特征集，以前我们
+
+couldn't rule out now they're all sitting clearly below the models so
+无法排除它们，现在它们都明显位于模型下方，因此
+
+there's clearly a gap between all of these feature sets that you see here and
+你所看到的所有这些特征集之间显然存在差距 看到这里，以及
+
+the behavior that we see in primates there's something left to explain
+我们在灵长类动物中看到的行为，还有一些东西需要解释，
+
+perhaps these muscles or models are missing some key architectural component
+也许这些肌肉或模型缺少一些关键的结构组件，
+
+um we are especially intrigued by this idea of the models missing something and
+嗯，我们对模型缺少某些东西的想法特别感兴趣，
+
+I'll try to take you through that next so far we've only modeled the
+接下来我将尝试带您了解这一点到目前为止，我们只对
+
+feed-forward aspect of the brain we know as I mentioned earlier there's
+大脑的前馈方面进行了建模，正如我之前提到的，
+
+feedback and intra cortical connections that we've left off of models that may
+我们在模型中遗漏了反馈和皮质内连接，这些连接可能
+
+be supporting some of the additional behavior that the primate has that the
+支持灵长类动物所具有的一些额外行为
+
+models currently don't have and I want to show you some of the evidence we have
+模型目前没有，我想向您展示我们拥有的一些证据，
+
+for that and this comes from teaming up with our Miri team including folks like
+这来自与我们的 Miri 团队合作，包括
+
+Jin hundred Malik and Saif Bailey which encouraged us to use and as cocoa images
+Jin Hundred Malik 和 Saif Bailey 等人，他们鼓励我们使用 和 作为可可图像
+
+to test our monkeys and our neurons not just our synthetic images so we've
+进行测试 我们的猴子和我们的神经元不仅仅是我们的合成图像，所以我们
+
+started testing those and I hope that that's builds even better connections
+已经开始测试这些，我希望这能
+
+with your community and what we've been doing I'll show you here one of the
+与您的社区建立更好的联系，以及我们一直在做的事情，我将在这里向您展示
+
+exciting things that we've found so far is now using these high throughput
+我们令人兴奋的事情之一 到目前为止，我们发现正在使用这些高吞吐量
+
+testing and when I say we I mean to postdocs ago he did Karen yonas Kabila's
+测试，当我说我们时，我的意思是博士后，他做了凯伦·约纳斯·卡比拉（Karen yonas Kabila），
+
+what we did is to use the high throughput testing to compare computer
+我们所做的是使用高吞吐量测试来比较计算机
+
+vision systems and it really doesn't matter which of those systems this plot
+视觉系统，这并不重要 这些系统这个图
+
+would look very similar with monkey performance each dot is an image and we
+看起来与猴子的表现非常相似，每个点都是一个图像，我们
+
+can find many images where the CV systems are falling short of the primate
+可以找到许多图像，其中 CV系统
+
+systems in terms of their performance these are what we refer to as CV
+在性能方面低于灵长类系统，这些就是我们所说的 CV
+
+unsolved images shown here in red and we have a bunch of CV solved images that
+未解决的图像，如图所示 红色，我们有一堆 CV 解决的图像，
+
+we're showing here in blue and we can then look in the brain to ask what's
+我们在这里用蓝色显示，然后我们可以在大脑中观察
+
+different between these images that might give us some clues of how to
+这些图像之间有什么不同，这可能会给我们一些关于如何
+
+improve the models I know many of you are interested in adversarial images
+改进我知道的模型的线索 您对模型生成的对抗性图像感兴趣，
+
+generated from models we consider these to be like discovered adversarial images
+我们认为这些就像发现的对抗性图像，
+
+where we're just taking a brute-force approach of testing lots of things and
+我们只是采用暴力方法测试很多东西，
+
+then using the primate system as a screen to say when are things much
+然后使用灵长类动物系统作为屏幕来判断什么时候情况会
+
+better than they are with computer vision systems here are some examples of
+好得多 与计算机视觉系统相比，这里是这些图像的一些示例，
+
+those images just to show you there's nothing I want you to see here we've
+只是为了向您展示我不想让您看到的任何内容。我们
+
+tried to regress out factors from the images that might explain what makes it
+尝试从图像中回归出一些因素，这些因素可能会解释是什么使
+
+on solvers to solve nothing obvious jumps out of us when we do those kinds
+求解器无法解决任何明显的跳跃问题 当我们进行此类分析时，我们会从我们身上看到一些东西，
+
+of analyses but I want to show you something that has jumped out of us and
+但我想向您展示一些从我们身上跳出来的东西，并
+
+leave you with this bit of information so if we look at now we sort of focus on
+给您留下一些信息，所以如果我们现在看，我们会关注
+
+images that humans and monkeys do very well shown in this orange bar and we
+人类和猴子做得很好的图像 如橙色条所示，
+
+then compare when computer vision systems do well shown in blue versus
+然后我们比较计算机视觉系统表现良好时以蓝色显示与
+
+when computer vision systems do poorly shown in red and we now look at what
+计算机视觉系统表现不佳时以红色显示的情况，现在我们看看
+
+happens in the brain comparing those two types of images we can record neural
+大脑中发生了什么，比较这两种类型的图像，我们可以记录神经
+
+activity at the top level of the brain and IP cortex remember I told you IP
+活动 大脑和 IP 皮层的顶层 记得我告诉过你 IP
+
+seems that the brain solution at least for the
+似乎大脑解决方案至少对于
+
+images we had shown before it's solution to its good behavior so then we can go
+我们之前展示的图像来说是对其良好行为的解决方案，所以我们可以
+
+and record IT with again triple array implants and Mon non-human primates
+再次用三重阵列植入物记录 IT，周一非 - 人类灵长类动物
+
+present an image collect the neural data we get an IP population vector out and
+呈现图像，收集神经数据，我们得到 IP 群体向量，
+
+then we can build our linear classifiers as we did before to ask how well how
+然后我们可以像之前一样构建线性分类器，以询问
+
+well these population vectors can again explain the behavior on both CV solvency
+这些群体向量可以在多大程度上再次解释 CV 偿付能力和
+
+the unsolved images so I'll show you one of the most interesting things that we
+未解决图像的行为 因此，我将向您展示迄今为止我们发现的最有趣的事情之一，
+
+found so far is that if we look now as a function of time as when we show an
+如果我们现在将其视为时间的函数，就像当我们显示一张
+
+image such as this image of a face and we look at the what's coming out of IP
+图像（例如这张脸的图像）时，我们看看会产生什么 IP
+
+cortex now at high temporal resolution we see that the performance comes up to
+皮层现在处于高时间分辨率，我们看到性能达到了
+
+be coding the animal level performance at about a hundred milliseconds so you
+在大约一百毫秒内对动物水平性能进行编码，因此您
+
+reach monkey accuracy and just over the latency of IP neurons for this example
+达到了猴子的准确性，并且略高于此示例图像的 IP 神经元的延迟，
+
+image here's another example image again a CV solved image again about a hundred
+这是另一个示例图像，又是CV 再次解析图像大约有一百
+
+millisecond latency but if we look at some of these CB unsolved images like
+毫秒的延迟，但是如果我们看一些 CB 未解析的图像，比如
+
+this image of a car we see that the decoding takes longer to occur notice
+这张汽车图像，我们会发现解码需要更长的时间才能发生，注意
+
+the I T neurons are responding see all the green at the top yet they haven't
+I T 神经元正在响应，看到顶部所有的绿色，但它们还没有
+
+yet come up with a solution in their population yet the decoding accuracy
+尚未在它们的群体中提出解决方案，但解码精度
+
+doesn't reach monkey level accuracy until about a hundred milliseconds later
+直到大约一百毫秒后才达到猴子级别的精度，
+
+similarly here's another example image of a four shorting dog and you see the
+类似地，这是另一个四短狗的示例图像，您会看到
+
+same thing that takes a while to get up there now these are just four examples
+同样的事情需要一段时间才能获得上面这些只是四个例子，
+
+here are some more examples either sixteen examples what we've collected
+这里还有更多例子，或者是十六个例子，我们
+
+thousands of images this way and we've measured them at high resolution but the
+通过这种方式收集了数千张图像，并且我们以高分辨率测量了它们，但
+
+one qualitative message I want to give you and you can see that already in them
+我想给你一个定性的信息，你可以看到 已经在这些
+
+examples and the blue and red dots at the bottom is that the average time of
+例子中，底部的蓝点和红点表示 CV 解决图像的平均时间比
+
+the CV solved images is about 30 milliseconds less than the CV unsewn so
+CV 未缝合的图像少约 30 毫秒，因此
+
+the brain takes an additional 30 milliseconds to do something we think
+大脑需要额外的 30毫秒来做一些我们认为
+
+this is has has something to do as I already alluded to it's feedback and
+有一些事情的事情 正如我已经提到的那样，它
+
+recurrence in the brain circuits of not in current computer vision models 30
+在大脑回路中的反馈和重现，而不是在当前的计算机视觉模型中，顺便说一句，30
+
+milliseconds by the way is a lot of time in brain units remember this is only a
+毫秒对于大脑单位来说是很多时间，记住这只是
+
+200 millisecond duration in which all of the computations are occurring but 30
+200 毫秒的持续时间，其中所有计算都是 发生但 30
+
+milliseconds is enough time to produce things like multiple rounds of feedback
+毫秒足以在视觉系统中产生诸如多轮反馈之类的东西
+
+in the visual system another important clue that I would
+
+
+leave you with here is that something I hid from you earlier but I'll show you
+
+
+now is that the ability of those deep networks to predict IP neurons is much
+深度网络预测 IP 神经元
+
+better at the front part of the response you can see that on the y-axis here the
+在响应的前面部分要好得多，您可以看到，在 y 轴上，
+
+ability to predict IP population codes the deep networks predict great pretty
+预测 IP 群体代码的能力深度网络
+
+well at the front part you can see that as a high bar at the clamp near the blue
+在前面部分预测得非常好，您可以看到，作为 蓝线附近的钳位处有高条，
+
+line but if you look even just 30 milliseconds later in time their ability
+但如果你在 30毫秒后观察，他们
+
+to predict IP falls off quite dramatically and this is important
+预测 IP 的能力就会显着下降，这一点很重要，
+
+because these late emerging iTunes features as I showed you earlier a
+因为正如我一分钟前向你展示的，这些后来出现的 iTunes 功能是
+
+minute ago underlie the brain solution to these cv unsolved images so it's not
+大脑的基础这些简历未解决的图像的解决方案，所以这并不
+
+as if I ask in computer vision systems to predict data just to predict data
+像我要求计算机视觉系统预测数据只是为了预测数据
+
+these data are where the brain solution is actually emerging so this is really a
+这些数据是大脑解决方案实际上正在出现的地方，所以这
+
+challenge for both of our fields to improve models probably including
+对我们两个领域来说确实是一个挑战，以改进模型可能包括
+
+feedback and recurrence in some way that can explain this and therefore lead to
+反馈和重复以某种方式可以解释这一点，从而带来
+
+better performance as well and I want to highlight that it's not just me wanting
+更好的性能，我想强调的是，不仅仅是我想
+
+to give you one bit of information that's saying go back and build a
+给你一点信息，那就是回去建立一个
+
+feedback model we have high resolution data on many thousands of images that we
+反馈模型，我们有高分辨率数据 在数千张图像上，我们
+
+can compare any model to as it unfolds it's decoding over time and so that's
+可以将任何模型与其展开进行比较，随着时间的推移进行解码，这就是
+
+the kind of constraint data that we're using in our lab to build new models
+我们在实验室中使用的约束数据来构建
+
+that incorporate feedback and any of you are interested in those kind of
+包含反馈的新模型，并且你们中的任何人都对这些感兴趣 类型
+
+comparisons please come see me after the talk so this is my last slide here I'd
+比较请在演讲结束后来看我，这是我的最后一张幻灯片，我
+
+like to say that our fields have together achieved a decent predictive
+想说的是，我们的领域已经共同实现了
+
+models of the neural mechanisms of core object perception our fine grained
+核心对象感知神经机制的不错的预测模型，
+
+analysis as I just show you select suggested a closer match to anatomy
+正如我刚才向您展示的那样，我们的细粒度分析 选择建议与解剖学更接近，
+
+especially feedback and recurrence may be needed to make the next model games I
+尤其是制作下一个模型游戏可能需要反馈和重现，我
+
+want to also stress I've been talking to this audience about model building and
+还想强调，我一直在与观众讨论模型构建以及
+
+comparing with spiking data and physiology but one of the things that
+与尖峰数据和生理学的比较，但
+
+neuroscience does is now able to do better is to start to intervene in the
+神经科学的其中一件事 现在能够做得更好的是开始使用光遗传学等
+
+circuits with new tools like optogenetics to be able to silence
+新工具干预电路，以便能够使
+
+individual neurons specific neural pathways we are working on tools to
+单个神经元特定的神经通路沉默，我们正在开发使
+
+silence feedback pathways particularly so that we can test ideas causally about
+反馈通路沉默的工具，特别是这样我们就可以测试关于该作用的因果想法
+
+the role of feedback we also and I didn't have time to talk
+我们也没有时间
+
+about this these models are now driving our ability to say well now we know how
+谈论这个反馈，这些模型现在正在推动我们的能力，现在我们知道
+
+to maybe inject singles and i.t again using tools to turn neurons on and off
+如何注射单细胞，并且再次使用工具以空间时间精确的方式打开和关闭神经元
+
+in a spatially temporally precise way this is paving the way to what might be
+这为
+
+called broader machine interface brain machine interface to be able to perhaps
+所谓的更广泛的机器接口脑机接口铺平了道路，
+
+restore vision to those who have lost sight by injecting in low dimensional
+通过注射到
+
+places like AI T rather than high dimensional places like v1 or earlier
+像AI T这样的低维度地方而不是像v1这样的高维度地方或当前存在的
+
+areas where current braiding machine interfaces are used how does the system
+早期区域，也许能够恢复那些失去视力的人的视力。 使用编织机接口系统如何
+
+develop and learn I mentioned this is a question earlier our lab has done work
+开发和学习我之前提到过这是一个问题我们的实验室已经完成了
+
+on unsupervised learning I'm sure this is of interest to many of you those data
+无监督学习的工作我相信你们中的许多人对此感兴趣
+
+in our lab are currently sitting without a model to explain them it's something
+我们实验室中的数据目前没有模型 解释一下，这是
+
+that we hope to make progress on in the next few years but this is of course a
+我们希望在未来几年内取得进展的事情，但这当然是
+
+next frontier and development from birth is also a challenging area that again
+下一个前沿领域，从出生开始的发展也是一个具有挑战性的领域，
+
+we're just starting to work on so these are key open questions now very open
+我们刚刚开始研究，所以这些是关键的开放问题 现在是非常悬而未决的
+
+questions and I'll just leave you with one of the things that I said is there
+问题，我只想留给您我所说的一件事，是否存在
+
+there decoders somewhere that I mentioned and somehow they're reused for
+我提到的某个地方的解码器，并且以某种方式将它们重新用于与
+
+object related tasks and general cognition or at least we think they
+对象相关的任务和一般认知，或者至少我们认为它们
+
+might be and how are they reused to support those things those are questions
+可能是以及如何使用 它们是否被重用来支持这些事情，这些是
+
+like we haven't touched on at all here I haven't told you anything about today
+我们在这里根本没有触及的问题，我没有告诉你今天的任何事情，
+
+and those are questions that we're working on next I really want to end by
+这些是我们接下来要解决的问题，我真的想通过
+
+thanking these folks I'm really just an ambassador of the work here they did all
+感谢这些人来结束我的工作。 我真的只是这里工作的大使，他们做了所有的
+
+the work I try to highlight various folks along the way but really everyone
+工作，我一路上试图强调不同的人，但实际上
+
+on this slide including the names on the slide contributed to almost every little
+这张幻灯片上的每个人，包括幻灯片上的名字，都对
+
+bit of thing that I showed you because it's really a team effort in our group a
+我向你们展示的几乎每一点都做出了贡献，因为它是 这确实是我们小组的团队努力，是
+
+combination of modeling and data collection um I'd also like to thank my
+建模和数据收集的结合，嗯，我还要感谢我的
+
+funding agencies and I'm really thank the monkey subjects you saw them working
+资助机构，我真的很感谢你看到猴子实验对象的工作，
+
+that has led to great understanding of not only their brains but we think our
+这不仅使我们对它们的大脑有了深入的了解，而且 我们认为我们
+
+own brains and so they deserve thanks for that I also would like to thank all
+自己的大脑，所以他们值得感谢，我也想感谢
+
+of you as I said earlier I mean it's in the deepest way not just for inviting me
+你们所有人，正如我之前所说，我的意思是，这不仅仅是为了邀请我
+
+to present to your group which again I feel is a great honor but also because
+向你们的团队做演讲，我再次感到非常荣幸 还因为
+
+the work that you're doing is impacting our field and I hope that you see some
+你所做的工作正在影响我们的领域，我希望你能看到其中的一些
+
+of that and I hope that I've inspired some of you to find
+，我希望我已经激励了你们中的一些人找到
+
+even even deeper ways to connect to the kind of questions that we're interested
+更深入的方法来解决我们所提出的问题。 我
+
+in brand and cognitive sciences thank you
+对品牌和认知科学感兴趣，谢谢
+
+[Applause] [Music]
+[鼓掌][音乐]
+
+[Applause] Wow
+[鼓掌]哇，
+
+I'm sure there are questions from the floor so if you do we have time for a
+我确信会场有问题，所以如果你有的话，我们有时间回答
+
+few questions
+几个问题，
+
+go ahead Terry so the TV unsolved images is it time long enough that there's
+请继续特里，所以电视未解决的图像是它 时间足够长，以至于
+
+action saccade going on or is this entirely just within the the brain side
+动作扫视正在进行，或者这完全在
+
+of what's going on yes all of those were presented again just for 100 millisecond
+正在发生的事情的大脑一侧是的，所有这些都再次呈现，仅持续 100 毫秒，
+
+duration we've also tested it 200 but on the other viewing duration there are no
+我们也测试了 200 毫秒，但在其他观看持续时间上，有
+
+time for cicadas to occur there so this is all still in this briefly glimpsed
+蝉没有时间出现在那里，所以这一切仍然在这个短暂瞥见的
+
+window and that you know this is a great question because of course feedback is
+窗口中，你知道这是一个很好的问题，因为反馈当然
+
+going to play a role in larger timescales you're going to make
+会在更大的时间尺度中发挥作用，你将做出
+
+movements and so forth but even at these very narrow time windows there's
+动作等等，但是 即使在非常狭窄的时间窗口内，也会
+
+interesting computations going on that's what we've been focused on so thank you
+进行有趣的计算，这就是我们一直关注的问题，所以谢谢
+
+okay questions from Bessette hi my question is regarding on something
+Bessette 的好问题，你好，我的问题是关于一种
+
+called transfer learning where you take a model that might have taken weeks or
+称为迁移学习的东西，你采用一个可能需要数周或
+
+days or weeks to train and you take a model like that and you retrain just the
+数天的模型，或者 训练几周，你采用这样的模型，然后重新训练
+
+last few layers in you can even do it in like an order of minutes my question is
+最后几层，甚至可以在几分钟内完成，我的问题是，
+
+do you think humans do that do you think we're we're passing on large networks
+你认为人类会这样做吗？你认为我们正在传承吗？
+
+through DNA and that when when you're born that you have this model that can
+通过 DNA 建立大型网络，当你出生时，你就有了这个可以
+
+do object recognition and then we're doing training as as we live our lives
+进行物体识别的模型，然后我们在生活中进行训练，
+
+yeah that's a great question I tried to say when I said ID is a fixed basis set
+是的，当我说 ID 是一个时，这是一个很好的问题。 固定基础集
+
+I think that connects to your question so somehow during development you build
+我认为这与你的问题有关，所以在发育过程中你以某种方式建立了
+
+a ventral stream and we're still not sure how much of that exists at Birth
+腹侧流，我们仍然不确定出生时
+
+versus development but let's say at the end of development you have a ventral
+与发育时存在多少腹侧流，但让我们说在发育结束时你有
+
+stream a powerful representation a nightie that is able to then quickly
+一个强大的腹侧流 表示一个睡衣，它能够快速
+
+support the learning of a range of paths which we've estimated with those linear
+支持一系列路径的学习，
+
+decoders as I showed you so we view those linear decoders as you know
+正如我向您展示的那样，我们使用这些线性解码器估计了这些路径，因此我们查看这些线性解码器，因为您知道
+
+approximate of what an animal might need to do when it's faced with a new labeled
+动物在活动时可能需要做什么的近似值 面对一个新的标记
+
+example and so one of the things we're doing now is we're asking animals to
+示例，所以我们现在正在做的一件事是我们要求动物
+
+quickly learn one task for another it takes them about a day to
+快速学习一项任务来完成另一项任务，它们需要大约一天的时间才能
+
+learn a new object I showed you animals performing with on the order of 24 to 30
+学习一个新物体我向您展示了动物按照订单执行的操作 24 到 30 个
+
+objects it takes about a day to learn a new object and so we think what's
+物体大约需要一天的时间来学习一个新物体，所以我们认为
+
+happening in fact there's a lot of evidence for this is that the changes in
+实际上发生的事情有很多证据表明大脑的变化
+
+the brain are not in the ventral stream for that learning they're down streams
+并不在腹侧流中，因为学习它们在下降
+
+so there is some transfer from a kind of relatively fixed basis set at least
+因此，从一种至少固定在成年水平的相对固定的基础集进行了一些转移，然后
+
+fixed at the level of adulthood to then support those of many many tasks and
+支持许多任务，
+
+that's what I meant by ie being a big feature kind of a fixed feature basis to
+这就是我的意思，即成为一个固定特征基础的大特征，以
+
+support that so I hope that connects to your your question hi I have a follow-up
+支持该特征 所以我希望这与你的问题有关，嗨，我对
+
+question for this first question you mentioned that there's a 30 millisecond
+你提到的第一个问题有一个后续问题，有一个 30 毫秒的
+
+gap which is very interesting because that's basically like three hobs right
+间隙，这非常有趣，因为这基本上就像三个滚刀右
+
+three layers so does this give us a search radius to identify what possible
+三层，所以这是否给我们一个搜索半径 确定哪些可能的
+
+regions are influencing i.t it does a bit I also I you know the numbers are
+区域正在影响它。它确实有点我也我你知道这些数字又
+
+hard again that was an average number I hope you saw that many images even you
+很难，这是一个平均数字我希望你看到很多图像，即使你
+
+know even see the unsolved images some were shorter than some of the blue
+知道甚至看到未解决的图像，有些比一些蓝色短
+
+images so that was an average number so I don't think you would want to say oh
+图像，所以这是一个平均数字，所以我认为你不会想说哦，
+
+we need like an extra subsystem with three layers to do this right it's just
+我们需要一个具有三层的额外子系统来做到这一点，只是
+
+there's something evolving over time that we're picking up on when we parse
+随着时间的推移，我们在解析图像时会发现一些正在演变的东西
+
+the images that way that being said it does give you some search radius and one
+也就是说，它确实给了你一些搜索半径，
+
+of the interesting things that we're thinking about and especially on with
+我们正在考虑的有趣的事情之一，特别是与
+
+other collaborators is that you think about just deeper deeper models as
+其他合作者一起考虑的是，你认为更深层次的模型近似于
+
+approximating what's happening in a feedback system and but I don't know if
+反馈系统中发生的事情，但是 我不知道
+
+I can say more than that right now but I'm glad that you're thinking about that
+我现在是否可以说更多，但我很高兴你正在考虑
+
+maybe we can talk more after okay thank you my question would be how far along
+也许我们可以在好吧谢谢之后再谈更多，我的问题是神经
+
+is this neuroscience with modeling the physical side of of the brain and
+科学与物理方面的建模已经走了多远 大脑的结构和对神经
+
+modeling neurons to receive any quantum mechanical effects things that you know
+元进行建模以接收任何量子力学效应，如果
+
+we will never be able to catch without having dynamic systems and
+没有动态系统，我们将永远无法捕捉到这些效应，
+
+in our model well of course as you probably know
+当然，在我们的模型中，你可能知道
+
+there's a lot of effort now and connectomics to try to kind of measure
+现在需要付出很多努力和连接组学来尝试 一种测量
+
+the precise detailed connectivity within a small cortical volume that the
+小皮质体积内精确详细的连接性的
+
+synaptic level quantum effects I think most people are not thinking there's
+突触级量子效应，我认为大多数人并不认为
+
+going to be much of relevance there but that's speculative what I hope you took
+那里会有很多相关性，但这是推测性的，我希望你
+
+from our work is that look just by Counting spikes you can explain
+从我们的工作中得到的只是通过计数来观察 尖峰你可以解释
+
+something that was previously mysterious I don't need very crazy quantum effects
+一些以前神秘的东西我不需要非常疯狂的量子效应
+
+to exposure ons to actual behavior and so you know in my approaches until you
+来暴露实际行为，所以你知道我的方法，直到你
+
+need something more complicated stick with a simple model for the time being
+需要更复杂的东西，暂时坚持一个简单的模型，
+
+but there are a lot of efforts to measure the structure of cortex at much
+但有一个 付出了很多努力来以更精细的等级测量皮层的结构，
+
+finer grades and those data are coming soon so their neuroses producing a lot
+这些数据很快就会到来，因此他们的神经症现在会产生大量
+
+of data right now some of it will be very relevant to your interests and some
+数据，其中一些数据与您的兴趣非常相关，而另一些
+
+may be left so and as I said at the beginning sifting through is going to be
+可能会留下来，正如我在开始筛选将成为
+
+part of the job so thank you hi very interesting College so recently we have
+工作的一部分，所以谢谢你，非常有趣的大学，所以最近我们
+
+seen like a very deep structure and your networks like hundreds of layers or even
+看到了一个非常深的结构，你的网络有数百层甚至
+
+thousands of layers so can you come at someone the difference between these
+数千层，所以你能告诉别人两者之间的区别吗？ 这些
+
+structures and what human or monkey uses yes yes I was sort of hinting at that
+结
+
+when I showed that slide that the more recent models as you say some of them
+
+
+have gotten much deeper and they're not necessarily fitting the neurons better
+
+
+in fact some of them are fitting worse and you know that would be our
+其中的拟合更差，你知道，
+
+prediction at some point if you just say performance optimized and you don't
+如果你只是说性能优化，并且你根本不
+
+constrain the architecture at all at some point the model should deviate from
+限制架构，那么在某个时刻，这将是我们的预测，模型应该偏离
+
+what we're seeing in the brain we've seen some some hints of that but that
+我们在大脑中看到的情况。 已经看到了一些暗示，但是话虽这么
+
+being said we don't yet know when I say there's four layers in the court you
+说，我们还不知道什么时候我说球场有四层，你
+
+have four cortical layers maybe we should think of each area of the brain
+有四个皮质层，也许我们应该将大脑的每个区域
+
+as being you know you know ten layers within v1 relative to a model and so
+视为你知道你知道其中的十层 v1 相对于模型，因此
+
+this starts to require comparison of each feature layer of a model with each
+这开始需要将模型的每个特征层与
+
+level of the brain and those are the kind of things that we're doing in the
+大脑的每个级别进行比较，这些就是我们现在在实验室中正在做的事情
+
+lab now to answer those questions but I share your maybe it was maybe I'm
+来回答这些问题，但我分享你的可能 也许我
+
+magining at your skepticism that is if you get very very deep you're probably
+在想象你的怀疑，如果你变得非常非常深入，你可能会
+
+deviating from what the brain is doing although you might think of that as a
+偏离大脑正在做的事情，尽管你可能认为这是一个
+
+recurrent circuit that you're appraoch with a deep model but this is the edge
+循环回路，你正在接近一个深层模型，但是这个 是
+
+of what we know I so I'm sorry I can't say more than that
+我们所知道的边缘我所以很抱歉我不能说更多
+
+thank you hi so you showed the graph where monkey's
+谢谢你嗨所以你展示了猴子的
+
+brain is doing better than on some images than the developed deep neural
+大脑比在某些图像上比我们在这里开发的深度神经
+
+networks here we've done some analysis I mean maybe somebody in your lab where
+网络做得更好的图表 一些分析 我的意思是也许你实验室里的某个人
+
+you found some buttons in these images that makes it harder for neural networks
+在这些图像中发现了一些按钮，这些按钮使神经网络更难
+
+to work some summaries or some intuitions why those images are harder
+工作一些总结或一些直觉为什么这些图像更难
+
+and what's special about those tasks or images yes I'm sorry I maybe said that
+以及这些任务或图像有什么特别之处是的我很抱歉我 也许说得
+
+too quickly but we tried to regress out various factors from those images to
+太快了，但我们试图从这些图像中回归出各种因素来
+
+find things and nothing comes out of that so we don't we don't yet know what
+找到东西，但什么也没有得到，所以我们不知道是什么
+
+makes them what what makes those C D unsolved images special it's a great
+让它们变得如此，是什么让那些 C D未解决的图像变得特别，这是一个伟大的
+
+question but we've tried and we haven't seen anything yet okay thanks hi so you
+问题，但我们已经尝试过，但我们还没有看到任何东西，好的，谢谢你，所以你
+
+mentioned that you're only using the rate of spiking what are what is the
+提到你只使用尖峰率，
+
+time window that you are looking at for each of the different layers for the
+你正在为每个不同层查看的时间窗口是多少
+
+increase in the spiking over the basal rate so I I was a little fast and loose
+尖峰相对于基础速率的增加，所以我有点快速和宽松，
+
+in that in the decoding section I was using 100 millisecond time windows but
+因为在解码部分我使用了 100 毫秒的时间窗口，但
+
+later when I showed you for instance the model's ability to fit the neurons as a
+后来当我向您展示模型几乎可以将神经元拟合为
+
+function of time almost the last slide I showed they were using narrower time
+时间函数的能力时 在上一张幻灯片中，我展示了他们使用
+
+windows on the order of 10 to 20 milliseconds to count spikes to produce
+10 到 20 毫秒左右的较窄时间窗口来计算峰值以生成
+
+a feature vector so you kind of have a rolling feature vector in IP and then
+特征向量，这样你就可以在 IP 中拥有一个滚动特征向量，然后
+
+you ask how well the model fits in each of those smaller windows the is that
+你会问模型在每个特征中的拟合程度如何那些较小的窗口就是
+
+answer yeah I was wondering about like you know you have certain spike spiking
+答案是的，我想知道你知道你有某种尖峰尖峰
+
+pattern and say the v1 and then that spiking pattern leads to v2 so there
+模式并说 v1，然后该尖峰模式导致 v2，所以
+
+should be some sort of a time slice like a typical like in our area we will take
+应该有某种时间片，就像我们地区的典型情况一样 我们将进行
+
+one layer process the convolution one feed it into conversation two and so for
+一层处理，卷积一层将其输入对话二，因此对于
+
+different layers of the neural network so is there like a 10 millisecond time
+神经网络的不同层，是否存在
+
+slice that you are looking at or 20 millisecond again we we don't know the
+您正在查看的 10 毫秒时间片或 20毫秒时间片，我们不知道
+
+exact time slice that's the right slice to look at the best grounding we have on
+确切的时间 这是正确的切片，可以查看我们所拥有的最佳基础，
+
+that is with respect to the behavior right as a neuroscientist can look at
+即与行为有关，就像神经科学家可以观察
+
+spikes and say you know every spike matters and whatever time window matters
+尖峰并说你知道每个尖峰都很重要，无论时间窗口如何重要，
+
+it's a bit arbitrary so the only way we ground that is by saying well look a
+它都有点武断，所以我们唯一的方法是也就是说，
+
+nightie what time slice do we need to predict the behavior accurately and it
+我们需要什么时间片来准确预测行为，事实
+
+turns out that there's a pretty wide range of time slices that are still able
+证明，有相当广泛的时间片仍然能够
+
+to predict quite well and we're working on refining that with that finer grained
+很好地预测，我们正在努力改进它 更细粒度的
+
+behavioral data but it's somewhere less than a hundred but probably more than
+行为数据，但它不到一百个，但可能超过
+
+ten but that's for IT to map to behavior how v1 Maps to V 2 to V 4 that may be a
+十个，但这是 IT 映射到行为的方式 v1 映射到 V 2 到 V 4 这可能是
+
+different time scale in which to think about of things so these are great
+考虑事物的不同时间尺度，所以这些 是很好的
+
+questions but that's all I can say given the time they my trying to ask one
+问题，但这就是我能说的，因为他们只是想问一个
+
+question only and clear and short beside sorry if you've mentioned this already
+问题，并且清晰而简短，如果你已经提到了这一点，我很抱歉，
+
+but I was wondering how much of this generalizes to the auditory system like
+但我想知道这在多大程度上概括了听觉系统，就像
+
+how much does Alex Mack explain any auditory data if any data like that was
+有多少 Alex Mack 解释一下任何听觉数据，如果收集到了类似的数据，
+
+collected that's a great question thank you so I'm
+这是一个很好的问题，谢谢，所以我是
+
+Josh McDermitt group at MIT and Alex Kelly a graduate student his lab and
+麻省理工学院的 Josh McDermitt 小组，AlexKelly 是他实验室的研究生，
+
+along with Dan yemen's who I showed you have been comparing deep networks with
+还有 Dan Yemen 的实验室，我向你们展示了他们一直在比较深度网络 通过对
+
+measurements from a firmer eye in humans and there we know much less about the
+人类更坚定的眼睛进行测量，我们对听觉系统的了解远少于
+
+auditory system than the visual system but already those networks are offering
+视觉系统，但这些网络已经提供了
+
+some insights as to the number of levels of auditory processing that may be
+一些关于
+
+happening in the brain we're still trying to get the lay of the land and
+大脑中可能发生的听觉处理级别数量的见解，我们仍然试图了解情况而
+
+not human auditory system so they don't usually report things in terms of
+不是人类的听觉系统，所以他们通常不会以
+
+explained variants although I would refer you to Alex and Josh to if you if
+解释的变体来报告事情，尽管我会推荐你​​参考亚历克斯和乔什，如果
+
+you want to explore that question they have some very nice work on it much of
+你想探索这个问题，他们有一些非常好的 大部分工作
+
+it unpublished and I'm happy to make the connection if you like but but I think
+尚未发表，如果您愿意，我很乐意将其联系起来，但我认为
+
+you can also think about deep networks more broadly as you just alluded to to
+您也可以更广泛地考虑深层网络，正如您刚刚提到的
+
+the somatosensory system as well and this is the line of work that Dan
+体感系统一样，这就是工作范围
+
+yemen's at Stanford is pushing forward and he has in his new professorship
+斯坦福大学的 Dan Yemen 正在推进，他在那里担任新的教授，现在是
+
+there it's it's just about 6 o'clock on the
+
+
+last day of the conference so I invite you to speculate a little bit if you had
+会议最后一天的 6 点左右，所以我邀请你稍微推测一下，如果你必须
+
+to speculate what kind of information might be contained in this speculated
+推测什么样的信息可能会发生。 包含在
+
+feedback from IT what do you imagine it might be what's your guesses that's to
+来自 IT 的推测反馈中 您认为您的猜测
+
+me that question is a little bit like asking what kind of information is in
+是什么 对我来说，这个问题有点像问前馈流中包含哪些类型的信息
+
+the feed-forward flow right which is all right it's just not easily amenable to
+没错，没关系，只是不容易接受 用
+
+human words so you know I think of the recurrences mostly being a way to put a
+人类的话来说，所以你知道我认为递归主要是一种将
+
+compact a deeper network into a smaller space perhaps in terms of what I think
+紧凑的更深的网络放入更小的空间的方法，也许就我认为
+
+we're seeing that's my speculation there however I'm not sure that all the
+我们所看到的而言，这是我的猜测，但我不确定所有的
+
+feedback lines in the ventral stream are about computation online or what we call
+腹侧流中的反馈线与在线计算或我们所说的
+
+inference they may be there to support learning or further maintenance of the
+推理有关，它们可能在那里支持学习或进一步维护
+
+circuits for learning so you know and that's going to happen over much longer
+学习电路，所以你知道，这将
+
+time skills in 30 milliseconds so you know sorting that out which is which is
+在 30 毫秒内发生更长的时间技能，所以你知道排序 需要
+
+going to require tools to say can we knock down certain cell types and not
+工具来确定我们是否可以敲除某些细胞类型而不是
+
+other cell types to sort of sift through the information and that's kind of the
+其他细胞类型来筛选信息，这就是
+
+edge of where our work is to be able to measure that precisely so my guess it's
+我们工作的边缘，能够准确地测量这一点 我猜这是
+
+a mixture of kind of learning signals and a kind of a deeper network that's
+一种学习信号和一种更深层次网络的混合体，这种网络被
+
+kind of folded back to to allow it to kind of maybe fit in a smaller space if
+折叠起来，以使其能够适应更小的空间，如果
+
+you will that's completely speculative so thank you for allowing me to
+你愿意的话，这完全是推测性的，所以谢谢你允许我
+
+speculate please the next one on the side I think this relates to a previous
+推测 旁边的下一个我认为这与上一个
+
+question so I think a lot of monkey works you prison today is about rate
+问题有关，所以我认为今天监狱里的很多猴子工作都是关于速率
+
+coding and also I think the main logic of steep neural networks is also about
+编码的，而且我认为陡峭神经网络的主要逻辑也是关于
+
+the rate of the neuron firing so but I think it's also important about lens and
+神经元放电的速率，所以 但我认为镜头和
+
+your oil fire but do you think adding temporal coding to the models
+你的油火也很重要，但是你认为除了反馈之外，在模型中添加时间编码
+
+besides the feedbacks will like also improve the similarity between the
+还会提高
+
+models human a monkey brain activities yes this
+人类和猴子大脑活动模型之间的相似性吗？是的，这又
+
+is a great question again I don't you know the field tends to talk about rate
+是一个很好的问题，我不认为 你知道这个领域倾向于谈论速率
+
+codes versus time codes to me it's just which timescale is hours relevant this
+代码与时间代码，对我来说这只是哪个时间尺度与小时相关这
+
+was the earlier question about ten millisecond slices or hundred
+是之前关于十毫秒切片或一百
+
+millisecond slices so of course the time matters if we were averaging over a
+毫秒切片的问题所以当然时间很重要如果我们平均超过一秒
+
+second you know things wouldn't match up with
+你知道
+
+the behavior if we averaged over a millisecond I don't think it would
+如果我们平均超过一毫秒，事情就不会与行为相匹配，我认为
+
+either and so the answers are always in the middle and I would guess the
+也不会，所以答案总是在中间，我猜
+
+timescales of around ten milliseconds again that's my speculation are the most
+再次大约十毫秒的时间尺度，这是我的猜测是最
+
+kind of useful time skills to think about the processing but at the course
+友善的 有用的时间技能来考虑处理，但在
+
+at the biophysical level it matters at much finer timescale so it starts to
+生物物理层面上，它在更精细的时间尺度上很重要，因此它开始
+
+depend on what level of detail you want to be able to predict in the neurons by
+取决于你希望能够通过 Spike 预测神经元的详细程度，
+
+Spike yes and timing matters but for the kinds of computations that many of you
+是的，时间很重要，但是 对于你们许多人感兴趣的计算类型，
+
+are interested in I tend to think ten milliseconds are above seems to be
+我倾向于认为上面的十毫秒似乎
+
+sufficient to explain the kinds of behaviors that many of us are interested
+足以解释我们许多人感兴趣的行为类型
+
+in and when that will break down as we dig into the feedback circuits which are
+以及当我们深入研究反馈电路时这些行为何时会崩溃
+
+then forcing the timescale I don't know but we'll start big hundred and move
+然后迫使我不知道的时间尺度，但我们将从大的一百开始，然后越来越
+
+smaller and smaller until we kind of don't need to that's our approach
+小，直到我们不需要，这就是我们的方法，
+
+whereas maybe others might assume that all we got to start at the spikes and
+而也许其他人可能会认为我们必须从峰值开始，
+
+build our way up but that's a very challenging approach in a very
+建立我们的方式，但在一个非常复杂的系统中，这是一个非常具有挑战性的方法，
+
+complicated system so I share your interest but I my approaches more as I
+所以我分享你的兴趣，但我的方法更多，正如我所
+
+describe yeah so give the time limit I would also have two more questions
+描述的，是的，所以给时间限制，我还有两个问题，
+
+therefore if you have a burning desire to as your question is staying in the
+因此，如果你有强烈的愿望你的问题留在
+
+queue this thank you for the talk I was extremely interesting
+队列中，谢谢你的演讲，我非常有趣，
+
+so you mentioned the feedback might be the missing component like during the
+所以你提到反馈可能是缺少的组件，就像
+
+talk is actually a paper by Stanford Samir at all that was presented at this
+演讲期间实际上是斯坦福萨米尔在本次
+
+conference idle feedback networks start to know that might might be somewhat uh
+会议上发表的一篇论文空闲反馈网络启动一样要知道，
+
+interest well if that person is here I would love
+如果那个人在这里，我可能会有点兴趣，我很乐意
+
+to chat right my question is so network we've achieved excellent performance for
+聊天，我的问题是，所以网络我们已经
+
+fairly coarse classes in in CNN so we have currently but have you investigated
+在 CNN 中相当粗略的类别中取得了出色的性能，所以我们目前已经做到了，但是您是否调查过
+
+fine-grained classification at all for we're still somewhat lacking in terms of
+细粒度的网络 根本没有分类，因为我们在性能方面仍然有些欠缺，
+
+our performance there sorry I can't I can't quite hear the else sorry have you
+抱歉我不能，我听不清其他的抱歉，你是否
+
+investigated fine-grained classification in with respect to these models and like
+研究过这些模型的细粒度分类，并且
+
+pretty much when we have like we might have coarse classes like maybe like cat
+非常喜欢当我们有 就像我们可能有粗略的类别，比如猫
+
+or dog but maybe different types of cats and different types of dogs and these
+或狗，但可能有不同类型的猫和不同类型的狗，
+
+those things so you mean like subordinate level like one car versus
+这些东西所以你的意思是像从属级别，比如一辆车与
+
+another that next we have we have a bit so it turns out humans are not very good
+另一辆车，接下来我们有我们有一点，所以事实证明 人类
+
+at subordinate at those very short time windows so you know and when we look if
+在那些非常短的时间窗口内不太擅长服从，所以你知道，当我们查看时，如果
+
+you decode out of IP you also get similarly low above chance performance
+你从 IP 中解码，你也会在这些时间窗口中获得类似的低于机会的性能，
+
+at these time windows so that brings us in your regime where you probably need
+因此这将我们带入你可能需要
+
+eye movements and more time to actually ask to kind of put piece together the
+关注的地方 动作和更多的时间来实际要求将
+
+human ability so when you infer that humans are good at this you know in
+人类的能力拼凑在一起，所以当你推断人类擅长于此时，你知道在
+
+these conditions they're not that good at very narrow subordinate
+这些条件下，他们
+
+discrimination at those very short time windows so so I think we're now fully
+在非常短的时间窗口内不擅长非常狭窄的下属歧视，所以所以 我认为我们现在正在以您可能想象的
+
+engaged on that problem in the way that you're probably imagining it does that
+方式全面解决这个问题，这是
+
+make sense yeah thank you okay last question I thanks for your talk give any
+有道理的，是的，谢谢您，好的，最后一个问题，我感谢您的演讲，让您深入了解
+
+insight as to how the mammalian visual prescient visual pathway how does it
+哺乳动物的视觉预知视觉通路是如何做到这一点的 它
+
+achieve convolution that is our weight shared across a field of neurons yeah
+实现了卷积，这是我们在神经元领域共享的权重，是的，
+
+it's funny everybody I often says well convolution numbers can't be right
+每个人都很有趣，我经常说卷积数不可能是正确的，
+
+because the brain doesn't do that and then you open a textbook and there's an
+因为大脑不会这样做，然后你打开一本教科书，并
+
+assumption that there's a Gabor filter in one part of the visual field there's
+假设有一个 Gabor在视野的一个部分中进行过滤，在
+
+going to be a similar Gabor filter at another part of the visual field I think
+视野的另一部分中将会有一个类似的 Gabor 过滤器，我认为
+
+the field is can some people are confused about you know that's a
+这个领域可能会让有些人感到困惑，你知道这是一个
+
+convolutional operator in effect what you're asking is like how did it become
+卷积运算符，实际上你要问的是如何 它变成
+
+that way right so the way they differ from current convolutional nets is
+这样了吗？它们与当前卷积网络的不同之处在于，
+
+accomplish your net of course learns the filter type and then just convulsed it
+你的网络当然会学习过滤器类型，然后只是对其进行震动，
+
+whereas the brain is kind of learning those filters in parallel in a fact
+而大脑实际上是在并行学习这些过滤器
+
+- right so I don't think there's actual weight transmission it's just the
+- 是的，所以我不这样做 不认为存在实际的权重传递，只是
+
+learning rules are such that you end up you know the statistics are similar
+学习规则是这样的，你最终知道统计数据
+
+enough that you can learn about the world in two different places and end up
+足够相似，你可以在两个不同的地方了解世界，并最终
+
+with a similar set of filters and I think that's a generally shared view of
+得到一组类似的过滤器，我认为这通常是一个
+
+how to think about these networks now some of that might also be in the
+现在如何思考这些网络的共同观点其中一些也可能是在
+
+genetics or the development but at least the learning statistics also might
+遗传学或发育方面，但至少学习统计数据也可能
+
+support that so I don't think there's weight sharing in the brain but there is
+支持这一点，所以我不认为大脑中存在权重共享，但
+
+convolution in effects and when you execute the on the image if you will if
+效果中存在卷积 当你在图像上执行时，如果你愿意的话，如果这
+
+that makes that makes sense that
+有意义的话
